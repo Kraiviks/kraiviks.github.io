@@ -1,0 +1,117 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-image: url(../img/Rectangle3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+// font-family: 'Lato', sans-serif;
+
+header{
+    height: 100%;
+    background: linear-gradient(to right, #D52047, #EE3D1B);
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    padding-top: 17px;
+    .logo{
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color:white;
+        img{
+            padding-right: 5px;
+        }
+    }
+    .logo:hover{
+        cursor: pointer;
+    }
+    .nav-menu{
+        display: flex;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 20px 30px;       
+        }
+        a:hover{
+            color:black;
+        }
+    }
+    .language{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        img{
+            padding-right: 30px;
+        }
+        select{
+            cursor: pointer;
+            background-color: rgba($color: #000000, $alpha: 0);
+            border: none;
+            color: white;
+            font-size: 1em;
+            outline: none;
+            option{
+                background-color: rgb(146, 78, 78);
+            }
+        }
+    } 
+    .login{
+        cursor: pointer;
+        color: white;
+        padding: 15px 40px;
+        background: none;
+        border: 1px solid white;
+        border-radius: 8px;
+        outline: none;
+        font-weight: bold;
+    }
+    .login:active{
+        background-color: white;
+        color:red;
+    }
+}
+
+.header-bloc{
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    h1{
+        text-transform: uppercase;
+        font-size: 72px;
+    }
+    h2{
+        font-size: 24px;
+        width: 540px;
+        text-align: center;
+        line-height: 150%;
+    }
+    button{
+        cursor: pointer;
+        color:red;
+        border: none;
+        padding: 20px 50px;
+        border-radius: 7px;
+        font-weight: bold;
+        outline: none;
+    }
+    button:active{
+        background: none;
+        border: 1px solid white;
+        color: white;
+    }
+}

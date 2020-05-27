@@ -1,0 +1,166 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-image: url(../img/Rectangle3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#D52047), to(#EE3D1B));
+  background: linear-gradient(to right, #D52047, #EE3D1B);
+  opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100px;
+  padding-top: 17px;
+}
+
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+nav .logo img {
+  padding-right: 5px;
+}
+
+nav .logo:hover {
+  cursor: pointer;
+}
+
+nav .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 30px;
+}
+
+nav .nav-menu a:hover {
+  color: black;
+}
+
+nav .language {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .language img {
+  padding-right: 30px;
+}
+
+nav .language select {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  font-size: 1em;
+  outline: none;
+}
+
+nav .language select option {
+  background-color: #924e4e;
+}
+
+nav .login {
+  cursor: pointer;
+  color: white;
+  padding: 15px 40px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 8px;
+  outline: none;
+  font-weight: bold;
+}
+
+nav .login:active {
+  background-color: white;
+  color: red;
+}
+
+.header-bloc {
+  margin-top: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.header-bloc h1 {
+  text-transform: uppercase;
+  font-size: 72px;
+}
+
+.header-bloc h2 {
+  font-size: 24px;
+  width: 540px;
+  text-align: center;
+  line-height: 150%;
+}
+
+.header-bloc button {
+  cursor: pointer;
+  color: red;
+  border: none;
+  padding: 20px 50px;
+  border-radius: 7px;
+  font-weight: bold;
+  outline: none;
+}
+
+.header-bloc button:active {
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
