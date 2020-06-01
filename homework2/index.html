@@ -5,31 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homework(2)</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Smallapps</div>
-            <div class="nav-menu">
-                <a href="#">Home</a>
-                <a href="#">Features</a>
-                <a href="#">Screenshot</a>
-                <a href="#">Gallery</a>
-            </div>
-            <div class="nav-contacts">
-                <div class="tel"><img src="assets/img/contacts-ico1.svg" alt="tel"> 800-123-456</div>
-                <div class="email"><img src="assets/ img/contacts-ico2.svg" alt="email"> smallapps@gmail.com</div>
+            <div class="container nav">
+                <div class="logo">Smallapps</div>
+                <div class="nav__menu">
+                    <a href="#" class="nav__menu__link">Home</a>
+                    <a href="#" class="nav__menu__link">Features</a>
+                    <a href="#" class="nav__menu__link">Screenshot</a>
+                    <a href="#" class="nav__menu__link">Gallery</a>
+                </div>
+                <div class="nav__contacts">
+                    <div class="tel"><img src="assets/img/contacts-ico1.svg" alt="tel"> 800-123-456</div>
+                    <div class="email"><img src="assets/img/contacts-ico2.svg" alt="email"> smallapps@gmail.com</div>
+                </div>
             </div>
         </nav>
-        <div class="header-body">
-            <h2>Perfect app landing page <br/> <span>Duis bibendum diam</span></h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint accusantium ipsa adipisci. Doloribus consectetur iusto officia, architecto eum reiciendis odio temporibus illum, debitis fugiat voluptatibus illo amet exercitationem eligendi culpa.</p>
-            <a href="#">Download</a>
+        <div class="header__body">
+            <div class="container">
+                <h2>Perfect app landing page <br/> <span>Duis bibendum diam</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint accusantium ipsa adipisci. Doloribus consectetur iusto officia, architecto eum reiciendis odio temporibus illum, debitis fugiat voluptatibus illo amet exercitationem eligendi culpa.</p>
+                <a href="#">Download</a>
+            </div>
         </div>
     </header>
     <main>
-        <div class="section-features"></div>
+        <div class="section-features">
+            <div class="container">
+                <h2 class="s-features__h">Heading Feature title goes here</h2>
+                <p class="s-features__p">Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque, lacinia at tempor vitae, porta at arcu. Vestibulum varius non dui at pulvinar. Ut egestas orci in quam sollicitudin aliquet. </p>
+                <div class="features__list">
+                    <div class="features__list__wrap">
+                        <div class="features__list__element element1"><img src="assets/img/section-futures-ico1.svg" alt=""> Heading title one</div>
+                        <div class="features__list__element element2"><img src="assets/img/section-futures-ico2.svg" alt=""> Heading title one</div>
+                        <div class="features__list__element element3"><img src="assets/img/section-futures-ico3.svg" alt=""> Heading title one</div>
+                        <div class="features__list__element element4"><img src="assets/img/section-futures-ico4.svg" alt=""> Heading title one</div>
+                        <div class="features__list__element element5"><img src="assets/img/section-futures-ico5.svg" alt=""> Heading title one</div>
+                    </div>
+                    <div class="features__list__wrap__border"></div>
+                    <div class="features__list__body">
+                        <img src="assets/img/section-futures-ico2.svg" alt="" class="features__list__body__img">
+                        <h3>Heading Feature title goes here</h3>
+                        <p>Nunc accumsan hendrerit nunc, ac venenatis magna facilisis quis. Ut sit amet mi ac neque sodales facilisis. Nullam tempus fermentum lorem nec interdum. Ut id orci id sapien imperdiet vehicula. Etiam quis dignissim ante. Donec convallis tincidunt ligula, ac luctus mi interdum a.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
         <div class="section-product-feature"></div>
         <div class="section-gallery"></div>
         <div class="section-product-geature"></div>
