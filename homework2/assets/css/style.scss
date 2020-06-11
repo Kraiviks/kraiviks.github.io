@@ -169,3 +169,283 @@ header{
         }
     }   
 }
+
+
+.section-product-feature{
+    background-color: #F2F9FE;
+    height: 100vh;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .section-product-feature__box{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            h2{
+                font-size: 36px;
+                color: #5DCA88;
+            }
+            h2::after{
+                content: " ";
+                margin-top: 18px;
+                height: 3px;
+                width: 105px;
+                background-color: #8C9494;
+                display: block;
+            }
+            h3{
+                margin-top: 45px;
+                font-size: 36px;
+                color: #8C9494;
+            }
+            p{
+                margin-top: 51px;
+                color: #8C9494;
+                font-size: 16px;
+            }
+            a{
+                text-transform: uppercase;
+                color: #636C6C;
+                font-size: 21px;
+                transition: 0.5s;
+                border: 1px solid #636C6C;
+                border-radius: 30px;
+                padding: 20px 30px;
+                text-decoration: none;
+                align-self: flex-start;
+                font-weight: bold;
+                margin-top: 54px;
+            }
+            a:hover{
+                background-color: #0D4862;
+                color: white;
+            }
+        }
+        img{
+            margin-top: 100px;
+        }
+    }
+}
+
+.section-gallery{
+    height: 100vh;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            color: #636C6C;
+            font-size: 36px;
+        }
+        p{
+            max-width: 751px;
+            color:#AFB8B8;
+            font-size: 16px;
+        }
+        .section-gallery__phone{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 50px;
+        .section-gallery__phone-button{
+            display: block;
+            align-self: center;
+            img{
+                height: 50px;
+            }
+        }
+            .section-gallery__phone-box{
+                max-width: 296px;
+                p{
+                    margin-top: 25px;
+                    text-align: center;
+                    color:#8C9494;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.section-product-geature{
+    height: 100vh;
+    background-color: #F2F9FE;
+    .container{
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .section-product-geature__box{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            h2{
+                font-size: 36px;
+                color: #5DCA88;
+            }
+            h2::after{
+                content: " ";
+                margin-top: 18px;
+                height: 3px;
+                width: 105px;
+                background-color: #8C9494;
+                display: block;
+            }
+            h3{
+                margin-top: 45px;
+                font-size: 36px;
+                color: #8C9494;
+            }
+            p{
+                margin-top: 51px;
+                color: #8C9494;
+                font-size: 16px;
+            }
+            a{
+                text-transform: uppercase;
+                color: #636C6C;
+                font-size: 21px;
+                transition: 0.5s;
+                border: 1px solid #636C6C;
+                border-radius: 30px;
+                padding: 20px 30px;
+                text-decoration: none;
+                align-self: flex-start;
+                font-weight: bold;
+                margin-top: 54px;
+            }
+            a:hover{
+                background-color: #0D4862;
+                color: white;
+            }
+        }
+    }
+}
+
+.section-testimonials{
+    height: 100vh;
+    .container{
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .testimonials__h-text{
+            color: #636C6C;
+            font-size: 36px;
+        }
+        .testimonials__img{
+            height: 101px;
+            width: 101px;
+        }
+        .testimonials__quote{
+            font-family: "Myriad Pro Regular" ;
+            color: #8C9494;
+            font-size: 24px;
+            font-style: italic ;
+        }
+        .testimonials__name{
+            font-size: 24px;
+            color: #5DCA88;
+        }
+    }
+}
+
+.section-newsletter{
+    height: 50vh;
+    background-color: #F3F5F5;
+    .container{
+        height: inherit;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        .newsletter__title::before{
+            content: url(../img/newsletter-ico.png);
+            display: inline-block;
+        }
+        .newsletter__title{
+            font-size: 36px;
+            color: #8C9494;
+            font-weight: bold;
+            justify-self: center;
+        }
+
+        .newsletter__email{
+            padding: 15px 50px;
+            padding-right: 130px;
+            border: 1px solid #8C9494;
+            border-radius: 30px;
+            outline: none;
+            text-align: left;
+            width: 700px;
+        }
+
+        .newsletter__submit{
+            padding: 15px 50px;
+            border: 1px solid #8C9494;
+            border-radius: 30px;
+            margin-left: -130px;
+            outline: none;
+            color: white;
+            transition: 0.5s;
+            background-color: #5DCA88;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .newsletter__submit:hover{
+            background-color: #8C9494;
+            color: #5DCA88;
+        }
+    }
+}
+
+.footer{
+    height: 50vh;
+    background-color: #2D312F;
+    .container{
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .footer__title{
+            font-size: 42px;
+            color: #8C9494;
+            margin-bottom: 34px;
+        }
+        .footer__soc{
+            a{
+                padding: 0 13px;
+                .footer__soc__ico{
+                    width: 52px;
+                    height: 52px;
+                    padding: 10px;
+                    border: 1px solid #8C9494;
+                    border-radius: 50%;
+                    background-color: #8C9494;
+                }
+            }
+            margin-bottom: 70px;
+        }
+        .footer__contacts-menu{
+            a{
+                text-decoration: none;
+                color: #8C9494;
+                font-size: 16px;
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Myriad Pro Regular"; 
+    // адрес шрифта и тип 
+    src: url("../fonts/Myriad Pro Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
