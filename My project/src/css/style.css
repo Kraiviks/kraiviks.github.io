@@ -1,0 +1,109 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #9EA0A4;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #54575F;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  -webkit-box-shadow: -5px 5px 10px black;
+          box-shadow: -5px 5px 10px black;
+}
+
+header .logo {
+  color: fuchsia;
+  padding: 15px 20px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+header .nav {
+  padding: 5px 0 5px;
+}
+
+header .nav .nav__item {
+  display: inline-block;
+  padding: 15px 50px;
+  margin: 0 5px;
+  -webkit-box-shadow: 0 -10px 10px black;
+          box-shadow: 0 -10px 10px black;
+  cursor: pointer;
+}
+
+header .login {
+  padding: 15px 20px;
+  text-shadow: 1px 1px 10px white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+main article {
+  background-color: #9D9FA3;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main article .left-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #54575F;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 5px 5px 15px black;
+          box-shadow: 5px 5px 15px black;
+}
+
+main article .left-nav .left-nav__item {
+  color: white;
+  padding: 15px 10px;
+  margin: 3px 0;
+  background-color: rgba(228, 228, 228, 0.24);
+  width: 90px;
+  text-align: center;
+  cursor: pointer;
+}
+
+main article section {
+  margin: 10vh auto 0;
+  width: 90vw;
+  height: 85vh;
+  background-color: #4FBEAC;
+  -webkit-box-shadow: 10px 10px 25px black;
+          box-shadow: 10px 10px 25px black;
+}
+/*# sourceMappingURL=style.css.map */
