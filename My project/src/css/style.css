@@ -1,11 +1,13 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
   color: #9EA0A4;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -28,10 +30,40 @@ header {
 }
 
 header .logo {
-  color: fuchsia;
+  font-family: 'Kaushan Script', cursive;
+  color: #54575F;
   padding: 10px 20px;
-  font-style: italic;
   cursor: pointer;
+  font-size: 1.5rem;
+  animation: logoAnimated 1.5s infinite alternate-reverse;
+}
+
+@-webkit-keyframes logoAnimated {
+  0% {
+    color: #54575F;
+    text-shadow: 0 0 15px #54575F;
+  }
+  50% {
+    text-shadow: 0 0 15px #6060bd;
+  }
+  100% {
+    color: #00dcb3b8;
+    text-shadow: 0 0 15px #00dcb3b8;
+  }
+}
+
+@keyframes logoAnimated {
+  0% {
+    color: #54575F;
+    text-shadow: 0 0 15px #54575F;
+  }
+  50% {
+    text-shadow: 0 0 15px #6060bd;
+  }
+  100% {
+    color: #00dcb3b8;
+    text-shadow: 0 0 15px #00dcb3b8;
+  }
 }
 
 header .nav {
@@ -40,11 +72,64 @@ header .nav {
 
 header .nav .nav__item {
   display: inline-block;
-  padding: 10px 50px;
+  text-align: center;
+  padding: 15px;
+  width: 165px;
   margin: 0 5px;
-  -webkit-box-shadow: 0 -10px 10px black;
-          box-shadow: 0 -10px 10px black;
+  -webkit-box-shadow: 0 3px 1px #00dcb4;
+          box-shadow: 0 3px 1px #00dcb4;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .nav .nav__item:hover {
+  color: #4FBEAC;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  animation: navItemAnimated 1s infinite ease-in alternate-reverse;
+}
+
+@-webkit-keyframes navItemAnimated {
+  0% {
+    -webkit-box-shadow: 0 -10px 10px #54575F;
+            box-shadow: 0 -10px 10px #54575F;
+    -webkit-box-shadow: inset 0 0 10px  #54575F;
+            box-shadow: inset 0 0 10px  #54575F;
+  }
+  50% {
+    -webkit-box-shadow: 0 0px 10px #6060bd;
+            box-shadow: 0 0px 10px #6060bd;
+    -webkit-box-shadow: inset 5px 5px 10px #6060bd;
+            box-shadow: inset 5px 5px 10px #6060bd;
+  }
+  100% {
+    -webkit-box-shadow: 0 5px 10px #00dcb3b8;
+            box-shadow: 0 5px 10px #00dcb3b8;
+    -webkit-box-shadow: inset -10 -10px 10px #00dcb3b8;
+            box-shadow: inset -10 -10px 10px #00dcb3b8;
+  }
+}
+
+@keyframes navItemAnimated {
+  0% {
+    -webkit-box-shadow: 0 -10px 10px #54575F;
+            box-shadow: 0 -10px 10px #54575F;
+    -webkit-box-shadow: inset 0 0 10px  #54575F;
+            box-shadow: inset 0 0 10px  #54575F;
+  }
+  50% {
+    -webkit-box-shadow: 0 0px 10px #6060bd;
+            box-shadow: 0 0px 10px #6060bd;
+    -webkit-box-shadow: inset 5px 5px 10px #6060bd;
+            box-shadow: inset 5px 5px 10px #6060bd;
+  }
+  100% {
+    -webkit-box-shadow: 0 5px 10px #00dcb3b8;
+            box-shadow: 0 5px 10px #00dcb3b8;
+    -webkit-box-shadow: inset -10 -10px 10px #00dcb3b8;
+            box-shadow: inset -10 -10px 10px #00dcb3b8;
+  }
 }
 
 header .login {
@@ -99,22 +184,29 @@ main article .left-nav .left-nav__item {
   padding: 15px 10px;
   margin: 3px 0;
   background-color: rgba(228, 228, 228, 0.24);
-  width: 90px;
+  width: 100px;
   text-align: center;
   cursor: pointer;
 }
 
 main article section {
-  margin: 10vh 20px 0;
+  margin: 5vh 50px 0;
   width: 100%;
   height: 85vh;
   background-color: #4FBEAC;
   -webkit-box-shadow: 10px 10px 25px black;
           box-shadow: 10px 10px 25px black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .show-left-nav {
   margin-left: 0 !important;
+}
+
+.border-left-shadow {
+  -webkit-box-shadow: 10px 10px 25px black, -30px 0 25px #4FBEAC;
+          box-shadow: 10px 10px 25px black, -30px 0 25px #4FBEAC;
 }
 
 .hide {

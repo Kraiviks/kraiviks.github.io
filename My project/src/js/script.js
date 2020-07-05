@@ -2,17 +2,19 @@ window.addEventListener('DOMContentLoaded', () =>{
     'use strict';
 
     const examplesBtn = document.querySelector('.skills-examples'),
-          leftNav = document.querySelector('.left-nav');
+          leftNav = document.querySelector('.left-nav'),
+          sectionShadow = document.querySelector('section');
 
     function openLeftNav() {
         examplesBtn.addEventListener('click', ()=>{
             leftNav.classList.toggle('show-left-nav');
+            sectionShadow.classList.toggle('border-left-shadow');
         });
     }
 
     openLeftNav();
 
-    class MenuCard {
+    class sectionCard {
         constructor(tittle, parentSelector, ...classes) {
             this.tittle = tittle;
             this.parent = document.querySelector(parentSelector);
@@ -33,14 +35,15 @@ window.addEventListener('DOMContentLoaded', () =>{
         }
     }
     
-    new MenuCard(
+    new sectionCard(
         'About me',
         'article',
         'hide'
     ).render();
-    new MenuCard(
+    new sectionCard(
         'My scills',
         'article',
         'hide'
     ).render();
+
 });
