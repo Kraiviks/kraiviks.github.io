@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     'use strict';
 
     function openLeftNav() {
-        const examplesBtn = document.querySelector('.skills-examples'),
+        const examplesBtn = document.querySelector('.viks'),
               leftNav = document.querySelector('.left-nav'),
               sectionShadow = document.querySelector('section');
 
