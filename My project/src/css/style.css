@@ -154,7 +154,46 @@ header .user .user__menu {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .left-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -100px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #54575F;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 5px 5px 15px black;
+          box-shadow: 5px 5px 15px black;
+}
+
+main .left-nav .left-nav__item {
+  color: white;
+  padding: 15px 10px;
+  margin: 3px 0;
+  background-color: rgba(228, 228, 228, 0.24);
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+main .left-nav .new-viks {
+  background: none;
 }
 
 main article {
@@ -173,50 +212,13 @@ main article {
           align-items: center;
 }
 
-main article .left-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -100px;
-  -webkit-transition: .5s;
-  transition: .5s;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #54575F;
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 5px 5px 15px black;
-          box-shadow: 5px 5px 15px black;
-}
-
-main article .left-nav .left-nav__item {
-  color: white;
-  padding: 15px 10px;
-  margin: 3px 0;
-  background-color: rgba(228, 228, 228, 0.24);
-  width: 100px;
-  text-align: center;
-  cursor: pointer;
-}
-
-main article .left-nav .new-viks {
-  background: none;
-}
-
-main article section {
+main article .item-cards {
   margin: 0 50px;
   width: 100%;
   height: 100%;
   background-color: #4FBEAC;
-  -webkit-box-shadow: 10px 10px 25px #41454dcc;
-          box-shadow: 10px 10px 25px #41454dcc;
+  -webkit-box-shadow: 10px 10px 25px #41454d;
+          box-shadow: 10px 10px 25px #41454d;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

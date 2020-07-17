@@ -11,9 +11,15 @@
         <a class="logo">Kraiviks</a>
         <nav>
             <ul class="nav">
-                <li class="nav__item">Home</li>
-                <li class="nav__item viks">Viks</li>
-                <li class="nav__item">&#128736;</li>
+                <li class="nav__item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav__item viks">
+                    Viks
+                </li>
+                <li class="nav__item">
+                    <a href="#">&#128736;</a>
+                </li>
             </ul>
         </nav>
         <div class="user">
@@ -29,14 +35,14 @@
         
     </header>
     <main>
+        <aside class="left-nav">
+            <li class="left-nav__item">Anime</li>
+            <li class="left-nav__item">Manga</li>
+            <li class="left-nav__item">Films</li>
+            <li data-leftNavItem="add" class="left-nav__item new-viks">New viks</li>
+        </aside>
         <article>
-            <aside class="left-nav">
-                <li class="left-nav__item">Anime</li>
-                <li class="left-nav__item">Manga</li>
-                <li class="left-nav__item">Films</li>
-                <li data-leftNavItem="add" class="left-nav__item new-viks">New viks</li>
-            </aside>
-            <section></section>
+            <section class="item-cards"></section>
         </article>
     </main>
     <script src="js/script.js"></script>

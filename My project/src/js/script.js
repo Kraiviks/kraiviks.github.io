@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () =>{
             sectionShadow.classList.toggle('border-left-shadow');
         });
     }
-
+    
     openLeftNav();
 
     // class sectionCard {
