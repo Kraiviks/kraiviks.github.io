@@ -11,22 +11,38 @@
         <a class="logo">Kraiviks</a>
         <nav>
             <ul class="nav">
-                <li class="nav__item">About me</li>
-                <li class="nav__item">My skills</li>
-                <li class="nav__item skills-examples">My skills examples</li>
+                <li class="nav__item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav__item viks">
+                    Viks
+                </li>
+                <li class="nav__item">
+                    <a href="#">&#128736;</a>
+                </li>
             </ul>
         </nav>
-        <div class="login">@</div>
+        <div class="user">
+            <img src="assets/Avatar.png" alt="user-ava">
+            <span class="username">Username</span>
+            <ul class="user__menu">
+                <li>Profile</li>
+                <li>Massage</li>
+                <li>Settings</li>
+                <li>Exit</li>
+            </ul>
+        </div>
+        
     </header>
     <main>
+        <aside class="left-nav">
+            <li class="left-nav__item">Anime</li>
+            <li class="left-nav__item">Manga</li>
+            <li class="left-nav__item">Films</li>
+            <li data-leftNavItem="add" class="left-nav__item new-viks">New viks</li>
+        </aside>
         <article>
-            <aside class="left-nav">
-                <li data-leftNavItem="add" class="left-nav__item">+</li>
-                <li class="left-nav__item">Example 1</li>
-                <li class="left-nav__item">Example 2</li>
-                <li class="left-nav__item">Example 3</li>
-            </aside>
-            <section></section>
+            <section class="item-cards"></section>
         </article>
     </main>
     <script src="js/script.js"></script>

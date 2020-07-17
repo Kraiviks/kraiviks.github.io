@@ -70,16 +70,54 @@ header{
             }
         }
     }
-    .login{
-        padding: 10px 20px;
-        text-shadow: 1px 1px 10px white;
+    .user{
+        padding: 10px 50px 10px 0;
         font-size: 15px;
         cursor: pointer;
+        transition: 2s;
+        position: relative;
+        &:hover .user__menu{
+            display: block;
+        }
+        img{
+            width: 25px;
+        }
+        .user__menu{
+            top: 50px;
+            position: absolute;
+            display: none;
+            background-color: #54575f78;
+            box-shadow: 0 0 5px 2px black;
+        }
     }
 }
 
 main{
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    .left-nav{
+        // position: absolute;
+        display: flex;
+        margin-left: -100px;
+        transition: .5s;
+        flex-direction: column;
+        background-color: #54575F;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 15px black;
+        .left-nav__item{
+            color: white;
+            padding: 15px 10px;
+            margin: 3px 0;
+            background-color: rgba(228, 228, 228, 0.24);
+            width: 100px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .new-viks{
+            background: none;
+        }
+    }
     article{
         background-color: #9D9FA3;
         width: 100vw;
@@ -88,33 +126,14 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .left-nav{
-            // position: absolute;
-            display: flex;
-            margin-left: -100px;
-            transition: .5s;
-            flex-direction: column;
-            background-color: #54575F;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 5px 5px 15px black;
-            .left-nav__item{
-                color: white;
-                padding: 15px 10px;
-                margin: 3px 0;
-                background-color: rgba(228, 228, 228, 0.24);
-                width: 100px;
-                text-align: center;
-                cursor: pointer;
-            }
-        }
-        section{
-            margin: 5vh 50px 0;
+        .item-cards {
+            // margin: 5vh 50px 0;
+            margin: 0 50px;
             width: 100%;
-            height: 85%;
+            // height: 85%;
+            height: 100%;
             background-color: #4FBEAC;
-            box-shadow: 10px 10px 25px #41454dcc;
+            box-shadow: 10px 10px 25px #41454d;
             transition: 0.5s;
         }
     }
