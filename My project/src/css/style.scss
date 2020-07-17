@@ -137,3 +137,14 @@ main{
 }
 
 //JS style - end
+
+//Media
+
+@media (max-width: 512px) { 
+    header{
+        min-width: 340px !important;
+    }
+    article{
+        min-width: 340px !important;
+    }
+ }
