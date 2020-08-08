@@ -8,4 +8,4 @@
 //
 
 _______________
-[H-Tecnology](htpss://kraiviks.github.io/Layouts/H-Tecnology/)
+[H-Tecnology](https://kraiviks.github.io/Layouts/H-Tecnology/)
