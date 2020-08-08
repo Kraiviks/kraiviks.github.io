@@ -1,0 +1,94 @@
+.our-ervices{
+    text-align: center;
+}
+.services__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .box__border__wrap {
+        margin: 22.5px 12px;
+        padding: 3px;
+        position: relative;
+        background: linear-gradient(to right, #40C7A3, #E9CA77);
+
+        .services__box__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            max-width: 370px;
+            img {
+                margin: 45px 70px 0;
+            }
+
+            .item__title {
+                font-size: 18px;
+            }
+
+            .item__description {
+                padding-bottom: 25px;
+                max-height: 75px;
+                font-size: 16px;
+                overflow: hidden;
+                margin: 30px 30px 60px 30px;
+            }
+
+            .item__button {
+                color:white;
+                font-weight: 500;
+                position: absolute;
+                top: 90%;
+                transition: .3s;
+                background: linear-gradient(#4b4b4d);
+                &:hover{
+                    background: linear-gradient(to right, #40C7A3, #E9CA77);
+                }
+            }
+        }
+
+        .services_item__hide {
+            background-image: url('../img/our-services-active-img.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            max-width: 370px;
+            color: white;
+            margin: -3px;
+            display: none;
+            .blur-filter{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgba(9%, 76%, 64%, 0.8);
+                .item__title{
+                    margin: 90px 45px 0;
+                    font-size: 30px;
+                }
+                .item__description{
+                    padding-bottom: 25px;
+                    max-height: 75px;
+                    font-size: 16px;
+                    overflow: hidden;
+                    margin: 17px 60px 30px;
+                }
+                .services__form{
+                    display: flex;
+                    margin-bottom: 90px;
+                }
+                .services__form__input{
+                    outline: none;
+                    border: none;
+                    border-radius: 30px;
+                    padding: 20px;
+                    padding-right: 55px;
+                }
+                .item__button{
+                    background-color: #fff;
+                    margin-left: -50px;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}

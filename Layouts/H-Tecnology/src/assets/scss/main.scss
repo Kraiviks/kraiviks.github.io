@@ -1,0 +1,136 @@
+@import './header.scss';
+@import './ourServices.scss';
+@import './integration.scss';
+@import './blog.scss';
+@import './footer.scss';
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  color: #4B4B4D;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  @media (min-width: 1600px) {
+    max-width: 1600px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.button{
+  background:#4b4b4d;
+  padding: 20px 45px;
+  border-radius: 27.5px;
+  transition: .5s;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 15px #16c2a3;
+  }
+}
+
+.title__box{
+  text-align: center;
+  margin-bottom: 40px;
+  .title{
+      font-size: 36px;
+  }
+  .description{
+      max-width: 700px;
+      margin-bottom: 100px;
+  }
+}
+
+.what-we-do__wrapp, .contact-support__wrapp{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 111px;
+  margin-bottom: 200px;
+  img{
+      width: 100%;
+  }
+  .what-we-do__box, .contact-support__box{
+      display: flex;
+      flex-direction: column;
+      align-content: space-around;
+      margin-left: 100px;
+      .what-we-do__title, .contact-support__title{
+          font-size: 36px;
+      }
+      .what-we-do__description, .contact-support__description{
+          font-size: 18px;
+          margin-bottom: 50px;
+      }
+      .what-we-do__button, .contact-support__button{
+          align-self: baseline;
+          background-color: #4b4b4d;
+          &:hover{
+              box-shadow: 0 0 15px #4b4b4d;
+          }
+      }
+  }
+}
+
+.arrow-up{
+  position: fixed;
+  top: 100%;
+  left: 90%;
+  cursor: pointer;
+  transition: .5s;
+  &:hover{
+    filter: drop-shadow(0 0 10px #4f4094);
+  }
+}
+
+// Animate - Start
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadeIn {
+  from {
+    top: 100%;
+  }
+
+  to {
+    top: 80%;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeOut {
+  from {
+    top: 80%;
+  }
+
+  to {
+    top: 100%;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+// Animate - End
