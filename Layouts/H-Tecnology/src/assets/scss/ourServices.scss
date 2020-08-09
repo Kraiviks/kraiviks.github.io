@@ -46,7 +46,7 @@
             }
         }
 
-        .services_item__hide {
+        .services_item__subscribe {
             background-image: url('../img/our-services-active-img.jpg');
             background-size: cover;
             background-position: center;
@@ -55,7 +55,7 @@
             max-width: 370px;
             color: white;
             margin: -3px;
-            display: none;
+            display: flex;
             .blur-filter{
                 display: flex;
                 flex-direction: column;

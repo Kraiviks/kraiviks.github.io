@@ -9,7 +9,7 @@
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.267);
         .item__big{
             .blog__item__img{
-                max-width: 570px;
+                max-width: 100%;
             }
             .blog__item__title{
                 color: #16c2a3;
@@ -28,7 +28,7 @@
             box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.336);
         }
         .blog__item__img{
-            max-width: 170px;
+            max-width: 100%;
             max-height: 180px;
         }
     }

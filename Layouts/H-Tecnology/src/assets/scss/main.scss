@@ -25,12 +25,6 @@ a {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  @media (min-width: 1600px) {
-    max-width: 1600px;
-  }
-  @media (min-width: 1200px) {
-    max-width: 1200px;
-  }
 }
 
 .button{
@@ -101,6 +95,20 @@ a {
   }
 }
 
+
+.video__overlay{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(153, 141, 141, .5);
+  width: 100%;
+  height: 100%;
+}
+
+
 // Animate - Start
 .animated {
   animation-duration: 1s;
@@ -134,3 +142,206 @@ a {
   animation-name: fadeOut;
 }
 // Animate - End
+
+
+// Media queries - start
+
+// Mixins - start
+
+// forMediaStyle(651px, 700px)
+@mixin forMediaStyle($containerWidth, $linkFontSize, $itemCount, $worldMapWidth) {
+  .container{
+    max-width: $containerWidth;
+    .header-nav__list__item a{
+      font-size: $linkFontSize;
+    }
+    .integration__counters__box .item__wrap .item__count{
+      width: $itemCount !important;
+    }
+    .button_wrap .button{
+      padding: 10px 5px;
+    }
+    .header-nav__list__item{
+      padding: 10px;
+    }
+    .contact-support__wrapp img,
+    .what-we-do__wrapp img {
+      width: 40%;
+    }
+    .footer__map{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer__map__img{
+      width: $worldMapWidth;
+      
+    }
+    .services__box__item, .services_item__subscribe{
+      max-width: 295px!important;
+    }
+    .services_item__subscribe{
+      .blur-filter{
+        padding-bottom: 29px!important;
+      }
+      .item__title{
+        font-size: 29px!important;
+      }
+      .item__title, .item__description{
+        margin: 0!important;
+        padding: 15px;
+      }
+      .services__form{
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+      }
+      .services__form__input{
+        padding: 20px 0 20px 20px!important;
+      }
+      .item__button{
+        padding: 20px 0;
+        margin: 10px 0 0!important;
+      }
+    }
+  }
+  .blog{
+    .content__box{ 
+      flex-direction: column;
+      align-items: center;
+      .big__box, .little__box{
+        width: 89%;
+      }
+      .little__box{
+        margin-top: 20px;
+      }
+    }
+  }
+  .footer__list{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .arrow-up{
+    left: 80%;
+  }
+}
+// Mixins - end
+
+
+/* xs (<=543px) */
+@media (min-width: 361px) and (max-width: 575px) { 
+  @include forMediaStyle(455px, 15px, 700px, 9em);
+  .container{
+    text-align: center;
+  }
+  .header-nav{
+    flex-direction: column;
+    align-items: center;
+  }
+  .integration .container{
+    display: flex;
+    flex-direction: column;
+    .integration__title__box{
+      max-width: 70%;
+    }
+    .integration__counters__box{
+      max-width: 80%;
+    }
+  }
+  .logo{
+    width: 15em;
+  }
+  .header-nav__list__item{
+    padding: 0!important;
+  }
+  .what-we-do__wrapp, .contact-support__wrapp{
+    flex-direction: column;
+    .what-we-do__box{
+      margin: 0;
+    }
+    .what-we-do__title{
+      text-align: center;
+    }
+    a{
+      margin: 0 auto;
+    }
+  }
+  .button{
+    padding: 10px;
+  }
+  .big__box, .little__box{
+    width: 60%!important;
+  }
+  .blog__item__title{
+    padding: 5px 15px;
+  }
+  .blog__item{
+    flex-direction: column;
+  }
+  .links__box{
+    display: block!important;
+  }
+  .footer__logo{
+    max-width: 100%!important;
+  }
+  .footer__link{
+    padding: 0px 80px;
+  }
+  .arrow-up{
+    left: 60%;
+    img{
+      width: 5em!important;
+    }
+  }
+ }
+
+// *{
+//   border: 1px solid red;
+// }
+
+/* sm (>=576 и <=767) */
+@media (min-width: 576px) and (max-width: 767px) { 
+  @include forMediaStyle(651px, 13px, 700px, 9em);
+  .integration .container{
+    display: flex;
+    flex-direction: column;
+    .integration__title__box{
+      max-width: 70%;
+    }
+    .integration__counters__box{
+      max-width: 80%;
+    }
+  }
+ }
+
+/* md (>=768 и <=991) */
+@media (min-width: 768px) and (max-width: 991px) { 
+  @include forMediaStyle(651px, 18px, 700px, 12em);
+ }
+
+/* lg (>=992 и <=1199) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .container{
+    max-width: 851px;
+    .contact-support__wrapp img,
+    .what-we-do__wrapp img {
+      width: 40%;
+    }
+    .integration__counters__box .item__wrap .item__count{
+      width: 440px !important;
+    }
+    .button_wrap .button{
+      padding: 10px 15px;
+    }
+  }
+ }
+
+/* xl (>=1200) */
+@media (min-width: 1200px) { 
+    .container{
+      max-width: 1200px;
+    }
+ }
+
+
+// Media queries - end
