@@ -229,7 +229,7 @@ a {
 
 
 /* xs (<=543px) */
-@media (min-width: 359px) and (max-width: 575px) { 
+@media (min-device-width: 280px) and (max-device-width: 575px) { 
   @include forMediaStyle(455px, 15px, 700px, 9em);
   .container{
     text-align: center;
@@ -287,11 +287,17 @@ a {
   .footer__link{
     padding: 0px 80px;
   }
+  .footer .footer__list li{
+    margin: 0!important;
+  }
   .arrow-up{
     left: 60%;
     img{
       width: 5em!important;
     }
+  }
+  .box__border__wrap{
+    margin: 0!important;
   }
  }
 
@@ -300,7 +306,7 @@ a {
 // }
 
 /* sm (>=576 и <=767) */
-@media (min-width: 576px) and (max-width: 767px) { 
+@media (min-device-width: 576px) and (max-device-width: 767px) { 
   @include forMediaStyle(651px, 13px, 700px, 9em);
   .integration .container{
     display: flex;
@@ -315,12 +321,12 @@ a {
  }
 
 /* md (>=768 и <=991) */
-@media (min-width: 768px) and (max-width: 991px) { 
+@media (min-device-width: 768px) and (max-device-width: 991px) { 
   @include forMediaStyle(651px, 18px, 700px, 12em);
  }
 
 /* lg (>=992 и <=1199) */
-@media (min-width: 992px) and (max-width: 1199px) { 
+@media (min-device-width: 992px) and (max-device-width: 1199px) { 
   .container{
     max-width: 851px;
     .contact-support__wrapp img,
@@ -337,7 +343,7 @@ a {
  }
 
 /* xl (>=1200) */
-@media (min-width: 1200px) { 
+@media (min-device-width: 1200px) { 
     .container{
       max-width: 1200px;
     }
