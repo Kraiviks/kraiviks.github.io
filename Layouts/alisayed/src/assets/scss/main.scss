@@ -1,5 +1,6 @@
 @import "utils/vars";
 
+//Default - start
 html {
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
@@ -46,3 +47,62 @@ li {
   padding: 0;
   list-style-type: none;
 }
+
+//Default - end
+
+//Main style - start
+
+.grig{
+  display: grid;
+  grid-template-areas: 
+    'a a a a a a b b b'
+    'c c c c d d d d d'
+    'c c c c e e e e e'
+    'f f f g g g g g g'
+  ;
+
+  .black{
+    color: black;
+  }
+  
+  .grig__item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .grid__item{
+    background-position: center;
+    background-size: contain;
+  }
+  .grig__item_1{
+    grid-area: a;
+    background-image: url(../img/img-1.jpg);
+  }
+  .grig__item_2{
+    grid-area: b;
+    background-color: #f3f3f3;
+  }
+  .grig__item_3{
+    grid-area: c;
+    background-image: url(../img/img-2.jpg);
+  }
+  .grig__item_4{
+    grid-area: d;
+    background-image: url(../img/img-3.jpg);
+  }
+  .grig__item_5{
+    grid-area: e;
+    background-image: url(../img/img-4.jpg);
+  }
+  .grig__item_6{
+    grid-area: f;
+    background-image: url(../img/img-5.jpg);
+  }
+  .grig__item_7{
+    grid-area: g;
+    background-image: linear-gradient(45deg, #222, #1d33), url(../img/img-6.jpg);
+    background-blend-mode: overlay;
+  }
+}
+
+//Main style - end
