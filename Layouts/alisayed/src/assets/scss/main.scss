@@ -3,6 +3,7 @@
 //Default - start
 html {
   line-height: $mainLineHeight;
+  font-family: $mainFont;
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
@@ -62,17 +63,52 @@ li {
   ;
 
   .black{
-    color: black;
+    color: black !important;
   }
-  
+  .weigth{
+    font-weight: 900;
+  }
+  .menu{
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 75px;
+  }
+  input, textarea{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    outline: none;
+    &::placeholder{
+      color: white;
+    }
+  }
   .grig__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
-  .grid__item{
-    background-position: center;
-    background-size: contain;
+    background-blend-mode: overlay;
+    padding: 70px 60px;
+
+    h1{
+      font-weight: 300;
+      font-size: 40px;
+    }
+    p{
+      margin-top: 37px;
+      margin-bottom: 87px;
+      font-size: 15,57px;
+    }
+    .link{
+      color:white;
+      border: 1px solid white;
+      border-radius: 15px;
+      padding: 17px 40px;
+      font-size: 17px;
+    }
   }
   .grig__item_1{
     grid-area: a;
@@ -84,24 +120,72 @@ li {
   }
   .grig__item_3{
     grid-area: c;
-    background-image: url(../img/img-2.jpg);
+    background-image: url(../img/img-2.jpg), linear-gradient(#1e92af,#1e92af);
   }
   .grig__item_4{
     grid-area: d;
-    background-image: url(../img/img-3.jpg);
+    background-image: url(../img/img-3.jpg), linear-gradient(#fff4d2, #fff4d2);
+    .link{
+      border: 1px solid black;
+    }
   }
   .grig__item_5{
     grid-area: e;
-    background-image: url(../img/img-4.jpg);
+    background-image: url(../img/img-4.jpg), linear-gradient(#162633, #162633);
   }
   .grig__item_6{
     grid-area: f;
-    background-image: url(../img/img-5.jpg);
+    background-image: url(../img/img-5.jpg), linear-gradient(#1d5367, #1d5367);
   }
   .grig__item_7{
     grid-area: g;
-    background-image: linear-gradient(45deg, #222, #1d33), url(../img/img-6.jpg);
-    background-blend-mode: overlay;
+    background-image: url(../img/img-6.jpg), linear-gradient(rgba(90, 102, 95, 0.5), rgba(90, 102, 95, 0.5));
+    .inputs__wrap{
+      margin-top: 50px;
+      margin-bottom: 15px;
+      input{
+        padding: 20px 60px;
+        &:first-child{
+          margin-right: 15px;
+        }
+      }
+    }
+    .form{
+        display: flex;
+        flex-direction:column;
+        textarea{
+        padding: 30px;
+        resize: none!important;
+        width: 600px;
+        height: 160px;
+        font-size: 20px;
+        }
+        button{
+          cursor: pointer;
+          align-self: flex-end;
+          border: 1px solid white;
+          border-radius: 15px;
+          color: white;
+          background-color: transparent;
+          padding: 20px 50px;
+          margin-top: 15px;
+        }
+    }
+    .soc__content{
+      .soc__title{
+        font-weight: 400;
+        font-size: 17px;
+      }
+      .links__wrap{
+        .soc__ico{
+        
+        }
+      }
+      .description{
+        font-size: 17px;
+        
+      }
+    }
   }
 }
 
