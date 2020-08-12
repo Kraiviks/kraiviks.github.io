@@ -319,9 +319,6 @@ li {
     .logo{
       margin-top: 50px;
     }
-    #t-area{
-      padding: 10px;
-    }
   }
 }
 
@@ -346,6 +343,7 @@ li {
       .form{
         align-self: center;
         align-items: center;
+        padding: 15px;
         .inputs__wrap{
           display: flex;
           flex-direction: column;
