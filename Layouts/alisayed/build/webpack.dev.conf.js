@@ -10,7 +10,7 @@ module.exports = merge(baseWebpackConfig, {
   devtool: "cheap-module-eval-source-map",
   devServer: {
     contentBase: '../dist',
-    port: 8081,
+    port: 8082,
     overlay: {
       warnings: true,
       errors: true
