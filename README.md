@@ -7,3 +7,4 @@
 
 _______________
 [H-Tecnology](https://kraiviks.github.io/Layouts/H-Tecnology/dist/)
+[Grig adaptive](https://kraiviks.github.io/Layouts/alisayed/dist/)
