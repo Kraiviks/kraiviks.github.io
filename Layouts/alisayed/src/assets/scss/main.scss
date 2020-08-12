@@ -286,6 +286,20 @@ li {
 
 // Media queires - start
 
+@media only screen and (max-width: 320px){
+  a{
+    font-size: 15px !important;
+  }
+  .form{
+    #t-area{
+      max-width: 200px !important;
+    }
+    button{
+      align-self: center !important;
+    }
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .grid{
@@ -328,6 +342,7 @@ li {
     .grid__item_7{
       .form{
         align-self: center;
+        align-items: center;
         .inputs__wrap{
           display: flex;
           flex-direction: column;
@@ -361,7 +376,6 @@ li {
           display: flex;
           justify-content: space-between;
           input{
-            margin: 10px 0!important;
             padding: 20px 10px;
           }
         }
@@ -379,7 +393,6 @@ li {
         display: flex;
         justify-content: space-between;
         input{
-          margin: 10px 0!important;
           padding: 20px 15px;
         }
       }
