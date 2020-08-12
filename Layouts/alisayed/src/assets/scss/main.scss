@@ -343,7 +343,6 @@ li {
       .form{
         align-self: center;
         align-items: center;
-        padding: 10px !important;
         .inputs__wrap{
           display: flex;
           flex-direction: column;
@@ -351,6 +350,9 @@ li {
             margin: 10px 0!important;
             padding: 20px 120px;
           }
+        }
+        .t-area{
+          padding: 10px;
         }
       }
     }
