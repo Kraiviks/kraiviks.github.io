@@ -71,7 +71,7 @@ section{
 .header {
     background: url(../img/header.jpg) no-repeat center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     
     .navbar{
         padding: 20px 100px;
@@ -132,7 +132,14 @@ section{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+                transition: .5s;
+                &:hover{
+                    box-shadow: 0 0 5px black;
+                }
+                &:hover a{
+                    transform: rotateX(360deg);
+                    background-color: rgba(165, 158, 158, 0.425);
+                }
                 a {
                     box-shadow: 1px 0px 10px black;
                     background-color: white;
