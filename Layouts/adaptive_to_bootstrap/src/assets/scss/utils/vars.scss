@@ -1,13 +1,14 @@
 // Vars:
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 // Font
-$mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
+$mainFont                : 'Roboto', sans-serif;
 
 // Size
-$mainFontColor           : #101010;
-$mainFontSize            : 18px;
+$mainFontColor           : #5A5A5A;
+$mainFontSize            : 16px;
 $mainFontWeight          : 400;
-$mainLineHeight          : 1.4;
+$mainLineHeight          : 1.25;
 
 $desktopWidth            : 1280px;
 $smDesktopWidth          : 1024px;
