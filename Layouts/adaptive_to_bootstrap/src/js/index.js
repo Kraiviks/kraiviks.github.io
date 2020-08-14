@@ -1,6 +1,10 @@
 // Main js file
 
 window.addEventListener('DOMContentLoaded', ()=>{
-    baguetteBox.run('.gallery');
-    console.log("Kraiivks");
+    try {
+        baguetteBox.run('.gallery');
+        console.log("Kraiivks");
+    } catch (error) {
+        console.log(`Oops error: ${error}`);
+    }
 });
