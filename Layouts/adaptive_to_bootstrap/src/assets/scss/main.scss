@@ -71,8 +71,6 @@ section{
 .header {
     background: url(../img/header.jpg) no-repeat center;
     background-size: cover;
-    min-height: 100vh;
-    
     .navbar{
         padding: 20px 100px;
         .navbar-brand{
@@ -183,6 +181,21 @@ section{
     }
 }
 
+.section-work{
+    .gallery__item{
+        padding: 0;
+        margin-bottom: 60px;
+        a{
+            &:hover img {
+                box-shadow: 0 15px 35px rgba(0,0,0, .7);
+            }
+            img{
+                transition: all .5s;
+            }
+        }
+    }
+}
+
 //Style - end
 
 //Media - start
@@ -200,10 +213,19 @@ section{
     .head__description{
         font-size: 0.9em!important;
     }
+    .gallery__item{
+        transform: scale(1) !important;
+    }
 }
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .section-work{
+        .gallery__item{
+            transform: scale(0.6);
+        }
+    }
+}
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
@@ -211,6 +233,9 @@ section{
         .nav-link{
             margin: 0!important;
         }
+    }
+    .gallery__item{
+        transform: scale(0.8);
     }
 }
 

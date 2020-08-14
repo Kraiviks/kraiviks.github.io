@@ -1,2 +1,6 @@
 // Main js file
-console.log("g");
+
+window.addEventListener('DOMContentLoaded', ()=>{
+    baguetteBox.run('.gallery');
+    console.log("Kraiivks");
+});
