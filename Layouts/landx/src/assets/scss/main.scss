@@ -1,5 +1,7 @@
 @import "utils/vars";
 
+
+/* ==========================Default-Start========================== */
 html {
   line-height: $mainLineHeight;
   font-size: $mainFontSize;
@@ -52,6 +54,8 @@ img {
   width: 100%;
 }
 
+/* ==========================Default-End========================== */
+
 section,
 footer {
   padding: 100px 0;
@@ -62,6 +66,11 @@ footer {
 }
 .text-weight__bold {
   font-weight: 700;
+}
+
+.description {
+  font-size: 16px;
+  transition: 0.5s;
 }
 
 .title_section {
@@ -83,6 +92,9 @@ footer {
   margin-bottom: 80px;
 }
 
+
+
+/* ==========================section-header========================== */
 .header {
   background: url(../img/header-bg.jpg) no-repeat center;
   background-size: cover;
@@ -131,21 +143,21 @@ footer {
       }
     }
   }
-}
-form {
-  display: flex;
-  flex-direction: column;
-
-  input {
-    box-shadow: -5px 0px 0px #008ed6;
-    border: 1px solid #008ed6 !important;
+  form {
+    display: flex;
+    flex-direction: column;
+  
+    input {
+      box-shadow: -5px 0px 0px #008ed6;
+      border: 1px solid #008ed6 !important;
+    }
+    .btn-primary {
+      background-color: #008ed6;
+      text-transform: uppercase;
+    }
   }
-  .btn-primary {
-    background-color: #008ed6;
-    text-transform: uppercase;
-  }
 }
-
+/* ==========================section-brief R,L========================== */
 .section-briefR,
 .section-briefL {
   background-color: #f7f8fa;
@@ -188,7 +200,7 @@ form {
     }
   }
 }
-
+/* ==========================section-briefL========================== */
 .section-briefL {
   .item-first {
     &::before {
@@ -201,12 +213,7 @@ form {
     }
   }
 }
-
-.description {
-  font-size: 16px;
-  transition: 0.5s;
-}
-
+/* ==========================section-features========================== */
 .section-features {
   .features__items {
     margin: 80px 0;
@@ -219,7 +226,7 @@ form {
     }
   }
 }
-
+/* ==========================section-pricing========================== */
 .section-pricing {
   background-color: #f7f8fa;
   .description_section {
@@ -261,13 +268,13 @@ form {
     transition: 0.5s;
   }
 }
-
+/* ==========================section-watch========================== */
 .section-watch {
   iframe {
     margin-bottom: 47px;
   }
 }
-
+/* ==========================section-slider========================== */
 .section-slider {
   background-color: #f7f8fa;
   .carousel-item {
@@ -285,7 +292,7 @@ form {
     }
   }
 }
-
+/* ==========================section-clients========================== */
 .section-clients {
   .emblem {
     max-width: 130px;
@@ -333,7 +340,7 @@ form {
     color: #727272;
   }
 }
-
+/* ==========================section-registration========================== */
 .section-registration {
   background: url(../img/section-reg-bg.jpg) no-repeat center;
   color: white;
@@ -349,7 +356,7 @@ form {
     background-color: #008ed6;
   }
 }
-
+/* ==========================section-upFooter========================== */
 .section-upFooter {
   .text {
     font-size: 24px;
@@ -361,7 +368,7 @@ form {
     font-weight: bold;
   }
 }
-
+/* ==========================Footer========================== */
 .footer {
   background-color: #f7f8fa;
   .logo {
@@ -395,7 +402,7 @@ form {
   }
 }
 
-/* ================Media requests================ */
+/* ==========================Media requests - start========================== */
 
 @media (max-width: 575.98px) {
   .section-watch {
@@ -468,3 +475,5 @@ form {
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
 }
+
+/* ==========================Media requests - end========================== */
