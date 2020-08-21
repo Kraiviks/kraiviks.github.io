@@ -9,3 +9,4 @@ _______________
 [H-Tecnology](https://kraiviks.github.io/Layouts/H-Tecnology/dist/)
 [Grig adaptive](https://kraiviks.github.io/Layouts/alisayed/dist/)
 [Adaptive_bootstrap_letusmake](https://kraiviks.github.io/Layouts/adaptive_to_bootstrap/dist/)
+[Adaptive_bootstrap_LandX](https://kraiviks.github.io/Layouts/landx/dist/)
