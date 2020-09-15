@@ -7,7 +7,9 @@ export default class Body extends Component {
     
     render() {
         return(
-            <main className="app-body"></main>
+            <div className="col-9">
+                <main className="app-body"></main>
+            </div>
         )
     }
 }
