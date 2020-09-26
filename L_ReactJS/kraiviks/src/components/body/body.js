@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ItemCard from '../item-card/item-card';
 import './body.scss';
 
 export default class Body extends Component {
@@ -7,9 +8,9 @@ export default class Body extends Component {
     
     render() {
         return(
-            <div className="col-9">
-                <main className="app-body"></main>
-            </div>
+            <main className="app-body">
+                <ItemCard/>
+            </main>
         )
     }
 }

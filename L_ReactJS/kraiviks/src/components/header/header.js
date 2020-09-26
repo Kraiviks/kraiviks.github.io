@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import UserProfile from '../user-profile/user-profile';
 import './header.scss';
 
 export default class Header extends Component {
@@ -25,17 +26,21 @@ function Logo() {
 }
 
 function Nav() {
+
     return (
-        <ul className="nav">
-            <li className="nav-item">1</li>
-            <li className="nav-item">2</li>
-            <li className="nav-item">3</li>
-        </ul>
+        <nav>
+            <ul className="nav-list">
+                <li className="nav-item">Home</li>
+                <li className="nav-item"
+                /*onClick={showLeftNav}*/>Viks</li>
+                <li className="nav-item">🛠</li>
+            </ul>
+        </nav>
     )
 }
 
 function User() {
     return (
-        <h3>User</h3>
+        <h3 /*onClick={showUserProfile}*/>User</h3>
     )
 }
