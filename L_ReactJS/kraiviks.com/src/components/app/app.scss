@@ -1,0 +1,22 @@
+a{
+    text-decoration: none;
+    color: #9D9FA3;
+}
+.app{
+    color: #9D9FA3;
+    background-color: #9D9FA3;
+    display: grid;
+    grid-template-areas: "header header"
+                         "left-nav app-body";
+    grid-template-columns: 1fr 90wh;
+    grid-template-rows: 1fr 90vh;
+}
+.header{
+    grid-area: header;
+}
+.left-nav{
+    grid-area: left-nav;
+}
+.app-body{
+    grid-area: app-body;
+}
