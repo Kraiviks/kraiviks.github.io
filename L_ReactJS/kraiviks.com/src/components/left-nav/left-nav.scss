@@ -1,0 +1,15 @@
+.left-nav{
+  background-color: #54575F;
+  transition: 1s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .viks{
+    list-style-type: none;
+    .viks-item{
+      padding: 10px;
+      background-color: rgba(170, 168, 168, 0.521);
+    }
+  }
+}
