@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/app/app';
-import Modal from './components/modal/modal';
+import {Provider} from 'react-redux';
+import {createStore} from 'redux';
+import reducer from './reducer';
+import Counter from './components/counter';
+import App from './components/app';
+
+const store = createStore(reducer);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-    <Modal/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+	<Provider store={store}>
+		<App/>
+	</Provider>
+	, document.getElementById('root'));
