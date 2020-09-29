@@ -1,8 +1,13 @@
-header {
+.header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #54575F;
+  height: 7vh;
+  width: 100%;
+  box-shadow: 0 5px 10px black;
+  position: absolute;
+  z-index: 100;
 }
 
 .logo{
@@ -32,16 +37,20 @@ header {
   .nav-list {
     list-style-type: none;
     display: flex;
-
+    margin: 0;
+    padding: 0;
     .list_item {
       display: inline-block;
       text-align: center;
       padding: 5px 15px;
-      width: 165px;
+      width: 100px;
       margin: 0 5px;
       box-shadow: 0 3px 1px #00dcb4;
       cursor: pointer;
       transition: 0.5s;
+      &:hover a{
+        color: #00dcb4;
+      }
       &:hover{
         color: #4FBEAC;
         transform: scale(1.3);

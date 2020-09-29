@@ -1,15 +1,15 @@
 a{
     text-decoration: none;
     color: #9D9FA3;
+    transition: .5s;
 }
 .app{
-    color: #9D9FA3;
-    background-color: #9D9FA3;
     display: grid;
     grid-template-areas: "header header"
                          "left-nav app-body";
-    grid-template-columns: 1fr 90wh;
-    grid-template-rows: 1fr 90vh;
+    grid-template-columns: 100px 2fr;    
+    color: #9D9FA3;
+    background-color: #9D9FA3;
 }
 .header{
     grid-area: header;
