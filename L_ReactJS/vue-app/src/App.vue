@@ -2,23 +2,26 @@
   <div id="app">
     <Header/>
     <main>
-      <AsideNav/>
+      <AsideLeft/>
       <AppBody/>
+      <AsideRight/>
     </main>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
-import AsideNav from './components/AsideNav.vue'
+import AsideLeft from './components/AsideLeft.vue'
 import AppBody from './components/AppBody.vue'
+import AsideRight from './components/AsideRight.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    AsideNav,
-    AppBody
+    AsideLeft,
+    AppBody,
+    AsideRight
   }
 }
 </script>

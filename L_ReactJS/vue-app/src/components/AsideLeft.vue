@@ -1,23 +1,24 @@
 <template>
-  <aside class="aside-nav">
-      <ol class="aside-nav-list">
-          <li class="list-item">Anime</li>
-          <li class="list-item">Manga</li>
-          <li class="list-item">Ranobe</li>
+  <aside class="aside-left">
+      <ol class="aside-left-list">
+          <li class="list-item">Viks 1</li>
+          <li class="list-item">Viks 2</li>
+          <li class="list-item">1234567</li>
+          <li class="list-item">+</li>
       </ol>
   </aside>
 </template>
 
 <script>
 export default {
-    name: 'AsideNav'
+    name: 'AsideLeft'
 }
 </script>
 
 <style lang='scss'>
-    .aside-nav{
+    .aside-left{
         display: flex;
-        flex-direction: row;
+        flex-direction: columns;
         justify-content: center;
         align-items: center;
         // width: 100px;
@@ -26,10 +27,15 @@ export default {
         .list-item{
             color: white;
             background-color: rgba(228, 228, 228, 0.24);
-            padding: 15px 20px;
+            padding: 15px;
+            width: 100px;
             margin: 3px 0;
             text-align: center;
             cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;  
         }
     }
 </style>

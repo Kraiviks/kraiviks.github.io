@@ -39,6 +39,7 @@ export default {
     cursor: pointer;
     font-size: 1.5rem;
     animation: logoAnimated 1.5s infinite alternate-reverse;
+    user-select: none;
   }
   .nav-list {
     display: flex;
@@ -49,6 +50,7 @@ export default {
       width: 165px;
       margin: 0 5px;
       box-shadow: 0 3px 1px #00dcb4;
+      user-select: none;
       cursor: pointer;
       transition: 0.5s;
       &:hover {
