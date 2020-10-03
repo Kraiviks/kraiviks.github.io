@@ -1,10 +1,15 @@
 <template>
-  <div class="logo">Kraiviks</div>
+  <div class="logo">{{logo}}</div>
 </template>
 
 <script>
 export default {
-    name: 'Logo'
+    name: 'Logo',
+    data() {
+      return{
+        logo: 'Kraiviks'
+      }
+    }
 }
 </script>
 

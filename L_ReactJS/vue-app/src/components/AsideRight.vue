@@ -1,6 +1,6 @@
 <template>
   <aside class="aside-right">
-    <h1 class="title">Task templates</h1>
+    <h4 class="title">Task templates</h4>
     <ol class="tasks-list">
       <li class="task-item">Add music</li>
       <li class="task-item">deleted video</li>
@@ -10,13 +10,13 @@
       <li class="task-item">тренеровка</li>
       <li class="task-item">Зверстати сайт</li>
     </ol>
-    <button class="add-task">Add</button>
+    <button type="button" class="btn btn-secondary">Add</button>
   </aside>
 </template>
 
 <script>
 export default {
-  name: "AsideRight",
+  name: "AsideRight"
 };
 </script>
 
@@ -29,7 +29,7 @@ export default {
   flex-direction: column;
   align-items: center;
   margin: 30px 30px 30px 0;
-  width: 300px;
+  width: 30%;
   background-color: #54575f;
   box-shadow: 5px 3px 15px black;
   border-radius: 15px;
@@ -55,20 +55,12 @@ export default {
     background-color: #4fbeac;
     cursor: pointer;
     user-select: none;
-  }
-}
-.add-task {
-  color: white;
-  background-color: rgba(228, 228, 228, 0.24);
-  border: none;
-  border-radius: 20px;
-  padding: 10px 50px;
-  box-shadow: 0px 0px 15px #000;
-  transition: 2s;
-  cursor: pointer;
-  &:hover {
-    box-shadow: 0px 0px 0px #000;
-    box-shadow: inset 0px 0px 15px #4fbeac;
+    transition: .3s;
+    &:hover{
+      transform: scale(1.1);
+      box-shadow: -5px 0px 15px #B495FF,
+                  5px 0px 15px #B495FF;
+    }
   }
 }
 </style>

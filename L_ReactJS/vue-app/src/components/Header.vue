@@ -4,11 +4,10 @@
     <nav class="header-nav">
       <ol class="nav-list">
         <li class="nav-item">Home</li>
-        <li class="nav-item">Viks</li>
-        <li class="nav-item">***</li>
+        <li @click='showAsideLeft' class="nav-item">Viks</li>
+        <li class="nav-item">Task templates</li>
       </ol>
     </nav>
-    <div class="user-profile">@</div>
   </header>
 </template>
 
@@ -18,18 +17,32 @@ import Logo from "./Logo.vue";
 export default {
   name: "Header",
   components: {
-    Logo,
+    Logo
   },
+  data() {
+    return {
+      asideLeftState: false
+    }
+  },
+  methods: {
+    showAsideLeft: function(){
+      const aside = document.querySelector('.aside-left');
+      this.asideLeftState ? aside.style.marginLeft = '-100px' : aside.style.marginLeft = '0px';
+      this.asideLeftState ? aside.style.boxShadow = 'none' : aside.style.boxShadow = '5px 3px 15px black';
+      this.asideLeftState ? this.asideLeftState = false : this.asideLeftState = true;
+    }
+  }
 };
 </script>
 
 <style lang='scss'>
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #54575f;
   box-shadow: 0 5px 10px black;
+  min-height: 40px;
   height: 7vh;
   z-index: 1000;
   .logo {
@@ -43,11 +56,12 @@ export default {
   }
   .nav-list {
     display: flex;
+    margin: 0;
     .nav-item {
       display: inline-block;
       text-align: center;
-      padding: 5px 15px;
-      width: 165px;
+      padding: 8px 15px;
+      width: 140px;
       margin: 0 5px;
       box-shadow: 0 3px 1px #00dcb4;
       user-select: none;

@@ -17,13 +17,13 @@ export default {
 
 <style lang='scss'>
     .aside-left{
+        margin-left: -100px;
         display: flex;
-        flex-direction: columns;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        // width: 100px;
+        transition: .5s;
         background-color: #54575f;
-            box-shadow: 5px 3px 15px black;
         .list-item{
             color: white;
             background-color: rgba(228, 228, 228, 0.24);
@@ -36,6 +36,10 @@ export default {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;  
+            transition: .5s;
+            &:hover {
+                box-shadow: inset 0 0 30px #4FBEAC;
+            }
         }
     }
 </style>
