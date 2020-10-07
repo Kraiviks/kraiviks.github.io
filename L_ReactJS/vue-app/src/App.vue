@@ -36,7 +36,9 @@ export default {
   color: #9ea0a4;
   font-family: "Roboto", sans-serif;
 }
-
+html{
+  height: 100%;
+}
 body{
   min-width: 720px;
 }

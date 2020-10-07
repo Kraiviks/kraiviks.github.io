@@ -6,7 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state:{
         asideLeftState: false,
-        asideRightState: false,
+        asideRightState: true,
         arrayTask: []
     },
     mutations:{
@@ -19,7 +19,7 @@ export default new Vuex.Store({
         createTask(state){
             let inp = document.querySelector('.form-control').value;
             if (inp !== '') {
-                state.arrayTask.push(inp);
+                state.arrayTask.unshift(inp);
             }
             document.querySelector('.input-group').reset();
         }

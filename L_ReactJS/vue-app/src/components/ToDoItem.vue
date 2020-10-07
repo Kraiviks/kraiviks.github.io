@@ -1,6 +1,7 @@
 <template>
   <ol class="list-group">
       <li class="list-group-item" v-for="i in this.$store.state.arrayTask" :key="i.i">
+        <input type="checkbox" name="" id="">
         {{i}}
         <div class="button-block">
           <i class="far fa-star"></i>
@@ -26,7 +27,12 @@ export default {
     display: flex;
     word-break: break-word;
     justify-content: space-between;
+    align-items: center;
     outline: 1px solid #B57EDC;
+    input[type="checkbox"]{
+      border: 1px solid red;
+      margin-right: 5%;
+    }
     .button-block{
       display: flex;
       i{

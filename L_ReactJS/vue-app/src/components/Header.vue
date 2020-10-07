@@ -3,7 +3,6 @@
     <Logo />
     <nav class="header-nav">
       <ol class="nav-list">
-        <li class="nav-item">^^</li>
         <li @click='showAsideLeft'  class="nav-item">Viks</li>
         <li @click='showAsideRight' class="nav-item">Task templates</li>
       </ol>
