@@ -3,9 +3,9 @@
     <Logo />
     <nav class="header-nav">
       <ol class="nav-list">
-        <li class="nav-item">Home</li>
-        <li @click='showAsideLeft' class="nav-item">Viks</li>
-        <li class="nav-item">Task templates</li>
+        <li class="nav-item">^^</li>
+        <li @click='showAsideLeft'  class="nav-item">Viks</li>
+        <li @click='showAsideRight' class="nav-item">Task templates</li>
       </ol>
     </nav>
   </header>
@@ -19,17 +19,12 @@ export default {
   components: {
     Logo
   },
-  data() {
-    return {
-      asideLeftState: false
-    }
-  },
   methods: {
-    showAsideLeft: function(){
-      const aside = document.querySelector('.aside-left');
-      this.asideLeftState ? aside.style.marginLeft = '-100px' : aside.style.marginLeft = '0px';
-      this.asideLeftState ? aside.style.boxShadow = 'none' : aside.style.boxShadow = '5px 3px 15px black';
-      this.asideLeftState ? this.asideLeftState = false : this.asideLeftState = true;
+    showAsideLeft() {
+      this.$store.commit('toggleL')
+    },
+    showAsideRight() {
+      this.$store.commit('toggleR')
     }
   }
 };

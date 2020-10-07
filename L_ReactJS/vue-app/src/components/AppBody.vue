@@ -1,16 +1,10 @@
-<template>
+ <template>
   <article class="app-body">
     <section class="body-item">
-      <ToDoItem />
-      <form class="input-group mt-3 mb-3">
+      <ToDoItem/>
+      <form class="input-group mt-3 mb-3" @submit.prevent="createTask">
         <input
-          type="text"
-          class="form-control"
-          placeholder="Add tasks"
-          aria-label="Add tasks"
-          aria-describedby="button-addon2"
-          v-model="title"
-        />
+          type="text" class="form-control" placeholder="Add tasks" aria-label="Add tasks" aria-describedby="button-addon2"/>
         <div class="input-group-append">
           <button
             class="btn btn-outline-secondary"
@@ -32,9 +26,9 @@ export default {
   components: {
     ToDoItem,
   },
-  data() {
-    return{
-      title: ''
+  methods: {
+    createTask: function() {
+      this.$store.commit('createTask')
     }
   }
 };
@@ -42,8 +36,9 @@ export default {
 <style lang='scss'>
 .app-body {
   height: 93vh;
-  width: 70%;
+  width: 100%;
   z-index: 999;
+  transition: .8s;
   .body-item {
     background-color: #4fbeac;
     height: 100%;

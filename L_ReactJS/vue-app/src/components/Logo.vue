@@ -7,7 +7,7 @@ export default {
     name: 'Logo',
     data() {
       return{
-        logo: 'Kraiviks'
+        logo: 'Kraiviks: To Do'
       }
     }
 }
