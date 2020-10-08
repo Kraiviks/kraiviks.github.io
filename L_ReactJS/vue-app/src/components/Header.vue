@@ -1,12 +1,12 @@
 <template>
   <header class="header">
-    <Logo />
     <nav class="header-nav">
       <ol class="nav-list">
         <li @click='showAsideLeft'  class="nav-item">Viks</li>
-        <li @click='showAsideRight' class="nav-item">Task templates</li>
+        <li class="nav-item">Backgroung</li>
       </ol>
     </nav>
+    <Logo />
   </header>
 </template>
 
@@ -21,9 +21,6 @@ export default {
   methods: {
     showAsideLeft() {
       this.$store.commit('toggleL')
-    },
-    showAsideRight() {
-      this.$store.commit('toggleR')
     }
   }
 };
@@ -55,7 +52,6 @@ export default {
       display: inline-block;
       text-align: center;
       padding: 8px 15px;
-      width: 140px;
       margin: 0 5px;
       box-shadow: 0 3px 1px #00dcb4;
       user-select: none;
@@ -97,5 +93,19 @@ export default {
     box-shadow: 0 5px 10px #00dcb3b8;
     box-shadow: inset -10 -10px 10px #00dcb3b8;
   }
+}
+
+/* ==========================Media requests - start========================== */
+
+@media (max-width: 575.98px) {
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
 }
 </style>

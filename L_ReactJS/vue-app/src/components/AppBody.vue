@@ -43,7 +43,7 @@ export default {
 .app-body {
   height: 93vh;
   width: 100%;
-  z-index: 999;
+  z-index: 300;
   transition: .8s;
   .body-item {
     background-color: #4fbeac;
@@ -64,4 +64,20 @@ export default {
     }
   }
 }
+/* ==========================Media requests - start========================== */
+
+@media (max-width: 575.98px) {
+  .body-item{
+    margin: 0 !important;
+  }
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+} 
 </style>
