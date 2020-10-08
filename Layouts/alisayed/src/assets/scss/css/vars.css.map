@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,OAAO,CAAC,oFAAI",
+    "sources": [
+        "../utils/vars.scss"
+    ],
+    "names": [],
+    "file": "vars.css"
+}

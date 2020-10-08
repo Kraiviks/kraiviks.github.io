@@ -1,0 +1,64 @@
+.footer {
+  background-color: #F8F8F8;
+}
+
+.footer .footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.footer .footer__list li {
+  margin: 0 15px;
+}
+
+.footer .footer__list .footer__logo {
+  max-width: 26%;
+}
+
+.footer .footer__list .links__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 12%;
+}
+
+.footer .footer__list .links__box .footer__link {
+  color: #4B4B4D;
+}
+
+.footer .footer__list .links__box .footer__link:hover {
+  color: #16c2a3;
+}
+
+.footer .footer__list .description {
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.footer .footer__list .description a {
+  color: #16c2a3;
+}
+
+.footer .footer__list .title {
+  margin-bottom: 40px;
+}
+
+.footer .footer__list .twitter__feed .description {
+  text-decoration: underline;
+}
+
+.footer .footer__end {
+  background-color: #16C2A3;
+  padding: 35px 0;
+  text-align: center;
+}
+/*# sourceMappingURL=footer.css.map */

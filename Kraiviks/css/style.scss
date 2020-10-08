@@ -10,7 +10,7 @@
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #54575F;
     width: 100%;
@@ -24,6 +24,7 @@ header{
         padding: 5px 15px;
         cursor: pointer;
         font-size: 1.5rem;
+        user-select: none;
         @keyframes logoAnimated {
             0%{
                 color: #54575F;
@@ -39,85 +40,42 @@ header{
         }
         animation: logoAnimated 1.5s infinite alternate-reverse;
     }
-    .nav{
-        .nav__item{
-            display: inline-block;
-            text-align: center;
-            padding: 5px 15px;
-            width: 165px;
-            margin: 0 5px;
-            box-shadow: 0 3px 1px #00dcb4;
-            cursor: pointer;
-            transition: 0.5s;
-            &:hover{
-                color: #4FBEAC;
-                transform: scale(1.3);
-                @keyframes navItemAnimated {
-                    0%{
-                        box-shadow: 0 -10px 10px #54575F;
-                        box-shadow: inset 0 0 10px  #54575F ;
-                    }
-                    50%{
-                        box-shadow: 0 0px 10px rgb(96, 96, 189);
-                        box-shadow: inset 5px 5px 10px rgb(96, 96, 189);
-                    }
-                    100%{
-                        box-shadow: 0 5px 10px #00dcb3b8;
-                        box-shadow: inset -10 -10px 10px #00dcb3b8;
-                    }
-                }
-                animation: navItemAnimated 1s infinite ease-in alternate-reverse;
-            }
-        }
-    }
-    .user{
-        padding: 10px 50px 10px 0;
-        font-size: 15px;
-        cursor: pointer;
-        transition: 2s;
-        position: relative;
-        &:hover .user__menu{
-            display: block;
-        }
-        img{
-            width: 25px;
-        }
-        .user__menu{
-            top: 50px;
-            position: absolute;
-            display: none;
-            background-color: #54575f78;
-            box-shadow: 0 0 5px 2px black;
-        }
-    }
+    // .nav{
+    //     .nav__item{
+    //         display: inline-block;
+    //         text-align: center;
+    //         padding: 5px 15px;
+    //         width: 165px;
+    //         margin: 0 5px;
+    //         box-shadow: 0 3px 1px #00dcb4;
+    //         cursor: pointer;
+    //         transition: 0.5s;
+    //         &:hover{
+    //             color: #4FBEAC;
+    //             transform: scale(1.3);
+    //             @keyframes navItemAnimated {
+    //                 0%{
+    //                     box-shadow: 0 -10px 10px #54575F;
+    //                     box-shadow: inset 0 0 10px  #54575F ;
+    //                 }
+    //                 50%{
+    //                     box-shadow: 0 0px 10px rgb(96, 96, 189);
+    //                     box-shadow: inset 5px 5px 10px rgb(96, 96, 189);
+    //                 }
+    //                 100%{
+    //                     box-shadow: 0 5px 10px #00dcb3b8;
+    //                     box-shadow: inset -10 -10px 10px #00dcb3b8;
+    //                 }
+    //             }
+    //             animation: navItemAnimated 1s infinite ease-in alternate-reverse;
+    //         }
+    //     }
+    // }
 }
 
 main{
     min-height: 100vh;
     display: flex;
-    .left-nav{
-        // position: absolute;
-        display: flex;
-        margin-left: -100px;
-        transition: .5s;
-        flex-direction: column;
-        background-color: #54575F;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 5px 5px 15px black;
-        .left-nav__item{
-            color: white;
-            padding: 15px 10px;
-            margin: 3px 0;
-            background-color: rgba(228, 228, 228, 0.24);
-            width: 100px;
-            text-align: center;
-            cursor: pointer;
-        }
-        .new-viks{
-            background: none;
-        }
-    }
     article{
         background-color: #9D9FA3;
         width: 100vw;
@@ -138,24 +96,6 @@ main{
         }
     }
 }
-
-
-
-//JS style - start
-.show-left-nav{
-    margin-left: 0!important;
-}
-
-.border-left-shadow{
-    box-shadow: 10px 10px 35px black,
-                -30px 0 25px #4FBEAC;
-}
-
-.hide{
-    display: none;
-}
-
-//JS style - end
 
 //Media
 

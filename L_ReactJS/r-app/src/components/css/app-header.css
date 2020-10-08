@@ -1,0 +1,30 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+}
+
+.header__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 40px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__cart {
+  width: 20px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=app-header.css.map */
