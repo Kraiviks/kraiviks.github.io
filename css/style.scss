@@ -4,12 +4,15 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    color: #9EA0A4;
     font-family: 'Roboto', sans-serif;
 }
 .root{
     display: flex;
     flex-direction: column;
+}
+
+a{
+    color: #9EA0A4;
 }
 
 header{
@@ -107,6 +110,52 @@ main{
             }
         }
     }
+}
+
+.item-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .about-me{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .myFoto{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                box-shadow: 0 0 15px black;
+                transition: 1s;
+                cursor: pointer;
+                &:hover{
+                    box-shadow: 0 0 15px rgb(168, 102, 168);
+                    transform: rotate(25deg) scale(1.1);
+                }
+            }
+            .myName{
+                margin-top: 50px;
+            }
+        }
+        .kraiviks{
+            text-align: center;
+            ol{
+                li{
+                    border-radius: 20px;
+                    background-color: rgb(142, 212, 191);
+                    padding: 5px;
+                    margin: 5px;
+                    a{
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 //Media

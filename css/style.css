@@ -5,7 +5,6 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  color: #9EA0A4;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -17,6 +16,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+a {
+  color: #9EA0A4;
 }
 
 header {
@@ -186,6 +189,80 @@ main article .item-cards a {
   padding: 10px;
   border: 1px solid #41454d;
   margin: 5px 0;
+}
+
+.item-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item-cards .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-cards .container .about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-cards .container .about-me .myFoto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.item-cards .container .about-me .myFoto:hover {
+  -webkit-box-shadow: 0 0 15px #a866a8;
+          box-shadow: 0 0 15px #a866a8;
+  -webkit-transform: rotate(25deg) scale(1.1);
+          transform: rotate(25deg) scale(1.1);
+}
+
+.item-cards .container .about-me .myName {
+  margin-top: 50px;
+}
+
+.item-cards .container .kraiviks {
+  text-align: center;
+}
+
+.item-cards .container .kraiviks ol li {
+  border-radius: 20px;
+  background-color: #8ed4bf;
+  padding: 5px;
+  margin: 5px;
+}
+
+.item-cards .container .kraiviks ol li a {
+  border: none;
 }
 
 @media (max-width: 512px) {
