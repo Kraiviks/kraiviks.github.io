@@ -1,24 +1,30 @@
  <template>
   <article class="app-body">
-    <section class="body-item">
+    <section class="body-item" :class="{bgWhite: bgColor}">
       <div class="body-header">
-        <FilterTasks/>
-        <div class="counter">{{this.$store.state.arrayTask.length}} task left</div>
+        <FilterTasks />
+        <div class="counter">{{ arrayTask.length }} task left</div>
       </div>
       <form class="input-group mt-3 mb-3" @submit.prevent="createTask">
         <input
-          type="text" class="form-control" placeholder="Add tasks" aria-label="Add tasks" aria-describedby="button-addon2"/>
+          type="text"
+          class="form-control"
+          placeholder="Add tasks"
+          aria-label="Add tasks"
+          aria-describedby="button-addon2"
+        />
         <div class="input-group-append">
           <button
             class="btn btn-outline-secondary"
             type="submit"
             id="button-addon2"
+            
           >
             Add
           </button>
         </div>
       </form>
-      <ToDoItem/>
+      <ToDoItem />
     </section>
   </article>
 </template>
@@ -26,40 +32,46 @@
 <script>
 import ToDoItem from "./ToDoItem.vue";
 import FilterTasks from "./FilterTasks.vue";
+import { mapState } from "vuex";
 export default {
   name: "AppBody",
   components: {
     ToDoItem,
-    FilterTasks
+    FilterTasks,
+  },
+  computed: {
+    ...mapState(["arrayTask", "bgColor"])
   },
   methods: {
-    createTask: function() {
-      this.$store.commit('createTask')
+    createTask() {
+      this.$store.commit("createTask");
+      
     }
   }
 };
 </script>
-<style lang='scss'>
+<style lang='scss' scoped>
 .app-body {
   height: 93vh;
   width: 100%;
   z-index: 300;
-  transition: .8s;
+  transition: 0.8s;
   .body-item {
     background-color: #4fbeac;
     height: 100%;
-    margin: 0 50px;
+    margin: 0 100px;
     padding: 50px;
     box-shadow: 10px 10px 25px #41454d;
-    .body-header{
+    .body-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .counter{
+      .counter {
+        text-align: center;
         color: black;
       }
     }
-    .form-control{
+    .form-control {
       background-color: rgba(255, 255, 255, 0.151);
     }
   }
@@ -67,8 +79,14 @@ export default {
 /* ==========================Media requests - start========================== */
 
 @media (max-width: 575.98px) {
-  .body-item{
+  .app-body {
+    height: 90vh;
+  }
+  .body-item {
     margin: 0 !important;
+  }
+  .counter {
+    font-size: 0.8rem;
   }
 }
 // Small devices (landscape phones, less than 768px)
@@ -79,5 +97,5 @@ export default {
 }
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
-} 
+}
 </style>

@@ -1,32 +1,38 @@
 <template>
-  <header class="header">
+  <header class="header" :class="{bgBlue: bgColor}">
+    <Logo />
     <nav class="header-nav">
       <ol class="nav-list">
         <li @click='showAsideLeft'  class="nav-item">Viks</li>
-        <li class="nav-item">Backgroung</li>
+        <li @click="changeBgColor" class="nav-item">Backgroung</li>
       </ol>
     </nav>
-    <Logo />
   </header>
 </template>
 
 <script>
 import Logo from "./Logo.vue";
-
+import {mapState} from "vuex"
 export default {
   name: "Header",
   components: {
     Logo
   },
+  computed: {
+    ...mapState(["bgColor"])
+  },
   methods: {
     showAsideLeft() {
       this.$store.commit('toggleL')
+    },
+    changeBgColor() {
+      this.$store.commit('changeBgColor')
     }
   }
 };
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
 .header {
   display: flex;
   justify-content: space-around;
@@ -98,6 +104,20 @@ export default {
 /* ==========================Media requests - start========================== */
 
 @media (max-width: 575.98px) {
+  .header {
+    flex-direction: column;
+    height: 10vh;
+    .logo{
+      padding: 0;
+    }
+    nav{
+      width: 80%;
+    }
+    .nav-item{
+      width:80%;
+      padding: 2px 15px !important;
+    }
+  }
 }
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
