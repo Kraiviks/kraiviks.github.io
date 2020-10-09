@@ -240,8 +240,8 @@ main article .item-cards a {
 }
 
 .item-cards .container .about-me .myFoto:hover {
-  -webkit-box-shadow: 0 0 15px #a866a8;
-          box-shadow: 0 0 15px #a866a8;
+  -webkit-box-shadow: 15px 0 15px #a866a8;
+          box-shadow: 15px 0 15px #a866a8;
   -webkit-transform: rotate(25deg) scale(1.1);
           transform: rotate(25deg) scale(1.1);
 }

@@ -132,7 +132,7 @@ main{
                 transition: 1s;
                 cursor: pointer;
                 &:hover{
-                    box-shadow: 0 0 15px rgb(168, 102, 168);
+                    box-shadow: 15px 0 15px rgb(168, 102, 168);
                     transform: rotate(25deg) scale(1.1);
                 }
             }
