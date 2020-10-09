@@ -5,7 +5,6 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  color: #9EA0A4;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -35,6 +34,10 @@ header {
   z-index: 100;
   -webkit-box-shadow: 0 5px 10px black;
           box-shadow: 0 5px 10px black;
+}
+
+header a {
+  color: #9EA0A4;
 }
 
 header .logo {
@@ -81,17 +84,24 @@ header .logo {
 header .nav .nav__item {
   display: inline-block;
   text-align: center;
-  padding: 5px 15px;
-  width: 165px;
   margin: 0 5px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+header .nav .nav__item a {
+  display: inline-block;
+  padding: 10px 50px;
   -webkit-box-shadow: 0 3px 1px #00dcb4;
           box-shadow: 0 3px 1px #00dcb4;
-  cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-header .nav .nav__item:hover {
+header .nav .nav__item a:hover {
   color: #4FBEAC;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
@@ -144,15 +154,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-main article {
   background-color: #9D9FA3;
   width: 100vw;
   min-width: 740px;
   height: 93vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -162,14 +167,17 @@ main article {
           align-items: center;
 }
 
-main article .item-cards {
+main .item-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 50px;
   width: 100%;
   height: 100%;
@@ -181,13 +189,107 @@ main article .item-cards {
   transition: 0.5s;
 }
 
-main article .item-cards a {
-  color: black;
+main .item-cards .examples-job {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .item-cards .examples-job .element {
+  background-color: #3122;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+main .item-cards .examples-job .element a {
+  margin: 0;
+  padding: 0;
+}
+
+main .item-cards a {
   padding: 10px;
-  border: 1px solid #41454d;
   margin: 5px 0;
 }
 
+main .item-cards .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*About me start*/
+.about-pages {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: start;
+}
+
+.about-card .myFoto {
+  border-radius: 50%;
+  width: 200px;
+  -webkit-box-shadow: 1px 1px 15px #000;
+          box-shadow: 1px 1px 15px #000;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.about-card .myFoto:hover {
+  -webkit-transform: rotate(30deg) scale(1.2);
+          transform: rotate(30deg) scale(1.2);
+  -webkit-box-shadow: 30px 0px 30px #732582;
+          box-shadow: 30px 0px 30px #732582;
+}
+
+.about-card .myName {
+  margin-top: 30px;
+}
+
+.skills-card {
+  text-align: center;
+}
+
+.skills-card h2 {
+  margin-bottom: 50px;
+}
+
+.skills-card li {
+  background-color: #6ef0d4;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 3px;
+  -webkit-box-shadow: inset 0px 0px 5px #41454d;
+          box-shadow: inset 0px 0px 5px #41454d;
+}
+
+.contacts a {
+  border: none !important;
+  color: black;
+}
+
+/*About me end*/
 @media (max-width: 512px) {
   header {
     min-width: 340px !important;

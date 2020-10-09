@@ -49,6 +49,13 @@ html{
   }
 }
 
+.bgWhite{
+    background-color: #007bff40 !important;
+}
+.bgBlue{
+  background-color: #4f6f92 !important;
+}
+
 /* Animated Vue */
 
 /*Animated*/

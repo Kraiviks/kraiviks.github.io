@@ -1,6 +1,6 @@
 <template>
   <transition name="slide-fade">
-    <aside class="aside-left" v-if="this.$store.state.asideLeftState">
+    <aside class="aside-left" :class="{bgBlue: bgColor}" v-if="this.$store.state.asideLeftState">
       <ol class="aside-left-list">
         <li class="list-item">Viks 1</li>
         <li class="list-item">Viks 2</li>
@@ -12,12 +12,16 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   name: "AsideLeft",
+  computed: {
+    ...mapState(["bgColor"])
+  },
 };
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
 .aside-left {
   position: absolute;
   z-index: 500;
@@ -28,6 +32,7 @@ export default {
   align-items: center;
   transition: 0.5s;
   background-color: #54575f;
+  box-shadow: 1px 3px 15px black;
   .list-item {
     color: white;
     background-color: rgba(228, 228, 228, 0.24);

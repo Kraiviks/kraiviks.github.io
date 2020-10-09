@@ -4,7 +4,6 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    color: #9EA0A4;
     font-family: 'Roboto', sans-serif;
 }
 .root{
@@ -22,6 +21,9 @@ header{
     min-width: 740px;
     z-index: 100;
     box-shadow: 0 5px 10px black;
+    a{
+        color: #9EA0A4;
+    }
     .logo{
         font-family: 'Kaushan Script', cursive;
         color: #54575F;
@@ -48,30 +50,35 @@ header{
         .nav__item{
             display: inline-block;
             text-align: center;
-            padding: 5px 15px;
-            width: 165px;
+            //padding: 5px 15px;
+            //width: 165px;
             margin: 0 5px;
-            box-shadow: 0 3px 1px #00dcb4;
             cursor: pointer;
-            transition: 0.5s;
-            &:hover{
-                color: #4FBEAC;
-                transform: scale(1.3);
-                @keyframes navItemAnimated {
-                    0%{
-                        box-shadow: 0 -10px 10px #54575F;
-                        box-shadow: inset 0 0 10px  #54575F ;
+            user-select: none;
+            a{
+                display: inline-block;
+                padding: 10px 50px;
+                box-shadow: 0 3px 1px #00dcb4;
+                transition: 0.5s;
+                &:hover{
+                    color: #4FBEAC;
+                    transform: scale(1.3);
+                    @keyframes navItemAnimated {
+                        0%{
+                            box-shadow: 0 -10px 10px #54575F;
+                            box-shadow: inset 0 0 10px  #54575F ;
+                        }
+                        50%{
+                            box-shadow: 0 0px 10px rgb(96, 96, 189);
+                            box-shadow: inset 5px 5px 10px rgb(96, 96, 189);
+                        }
+                        100%{
+                            box-shadow: 0 5px 10px #00dcb3b8;
+                            box-shadow: inset -10 -10px 10px #00dcb3b8;
+                        }
                     }
-                    50%{
-                        box-shadow: 0 0px 10px rgb(96, 96, 189);
-                        box-shadow: inset 5px 5px 10px rgb(96, 96, 189);
-                    }
-                    100%{
-                        box-shadow: 0 5px 10px #00dcb3b8;
-                        box-shadow: inset -10 -10px 10px #00dcb3b8;
-                    }
+                    animation: navItemAnimated 1s infinite ease-in alternate-reverse;
                 }
-                animation: navItemAnimated 1s infinite ease-in alternate-reverse;
             }
         }
     }
@@ -79,35 +86,100 @@ header{
 
 main{
     display: flex;
-    article{
-        background-color: #9D9FA3;
-        width: 100vw;
-        min-width: 740px;
-        height: 93vh;
+    background-color: #9D9FA3;
+    width: 100vw;
+    min-width: 740px;
+    height: 93vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .item-cards {
+        // margin: 5vh 50px 0;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column!important;
         align-items: center;
-        .item-cards {
-            // margin: 5vh 50px 0;
+        margin: 0 50px;
+        width: 100%;
+        // height: 85%;
+        height: 100%;
+        padding: 50px;
+        background-color: #4FBEAC;
+        box-shadow: 10px 10px 25px #41454d;
+        transition: 0.5s;
+        .examples-job{
             display: flex;
-            flex-direction: column;
-            margin: 0 50px;
-            width: 100%;
-            // height: 85%;
-            height: 100%;
-            padding: 50px;
-            background-color: #4FBEAC;
-            box-shadow: 10px 10px 25px #41454d;
-            transition: 0.5s;
-            a{
-                color: black;
-                padding: 10px;
-                border: 1px solid #41454d;
-                margin: 5px 0;
+            .element{
+                background-color: #3122;
+                width: 100px;
+                height: 100px;
+                margin: 5px;
+                a{
+                    margin: 0;
+                    padding: 0;
+                }
             }
+        }
+        a{
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
         }
     }
 }
+
+/*About me start*/
+.about-pages{
+    flex-direction: row !important;
+    justify-content: space-around;
+    
+}
+.about-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: start;
+    .myFoto{
+        border-radius: 50%;
+        width: 200px;
+        box-shadow: 1px 1px 15px #000;
+        transition: 1s;
+        //@at-root: scale(0.8);
+        cursor: pointer;
+        &:hover{
+            transform: rotate(30deg) scale(1.2);
+            box-shadow: 30px 0px 30px #732582;
+        }
+    }
+    .myName{
+        margin-top: 30px;
+    }
+}
+.skills-card{
+    text-align: center;
+    h2{
+        margin-bottom: 50px;
+        
+    }
+    li{
+        background-color: #6ef0d4;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 3px;
+        box-shadow:inset 0px 0px 5px #41454d;
+    }
+}
+
+.contacts{
+    a{
+        border: none!important;
+        color: black;
+    }
+}
+/*About me end*/
 
 //Media
 
