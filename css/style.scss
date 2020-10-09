@@ -6,6 +6,10 @@
     list-style: none;
     font-family: 'Roboto', sans-serif;
 }
+html{
+    height: 100%;
+    background-color: #9EA0A4   ;
+}
 .root{
     display: flex;
     flex-direction: column;
@@ -138,6 +142,7 @@ main{
             }
             .myName{
                 margin-top: 50px;
+                margin-bottom: 10px;
             }
         }
         .kraiviks{
