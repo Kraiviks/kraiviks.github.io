@@ -1,5 +1,5 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-      ? '/SPA-L/vue-app/'
+      ? '/kraiviks.github.io/SPA-L/vue-app/'
       : '/'
   }

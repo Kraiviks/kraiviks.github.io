@@ -375,6 +375,10 @@ main .item-cards .container {
   border: none;
 }
 
+.examples-wrap a {
+  color: black;
+}
+
 @media (max-width: 512px) {
   header {
     min-width: 340px !important;
