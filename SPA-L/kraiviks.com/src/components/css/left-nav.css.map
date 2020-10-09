@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAA;EACP,gBAAgB,EAAE,OAAO;EACzB,UAAU,EAAE,EAAE;EACd,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CAQxB;;AAdD,AAOE,SAPO,CAOP,KAAK,CAAA;EACH,eAAe,EAAE,IAAI;CAKtB;;AAbH,AASI,SATK,CAOP,KAAK,CAEH,UAAU,CAAA;EACR,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,0BAA0B;CAC7C",
-    "sources": [
-        "../left-nav/left-nav.scss"
-    ],
-    "names": [],
-    "file": "left-nav.css"
-}
