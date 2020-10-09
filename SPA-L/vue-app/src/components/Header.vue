@@ -40,7 +40,7 @@ export default {
   background-color: #54575f;
   box-shadow: 0 5px 10px black;
   min-height: 40px;
-  height: 7vh;
+  height: 5vh;
   z-index: 1000;
   .logo {
     font-family: "Kaushan Script", cursive;
