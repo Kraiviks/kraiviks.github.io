@@ -258,6 +258,7 @@ main .item-cards .container {
 .about-card .myFoto {
   border-radius: 50%;
   width: 200px;
+  height: 180px;
   -webkit-box-shadow: 1px 1px 15px #000;
           box-shadow: 1px 1px 15px #000;
   -webkit-transition: 1s;
@@ -299,6 +300,81 @@ main .item-cards .container {
 }
 
 /*About me end*/
+.item-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item-cards .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-cards .container .about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-cards .container .about-me .myFoto {
+  width: 200px;
+  height: 185px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 15px black;
+          box-shadow: 0 0 15px black;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.item-cards .container .about-me .myFoto:hover {
+  -webkit-box-shadow: 15px 0 15px #a866a8;
+          box-shadow: 15px 0 15px #a866a8;
+  -webkit-transform: rotate(25deg) scale(1.1);
+          transform: rotate(25deg) scale(1.1);
+}
+
+.item-cards .container .about-me .myName {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.item-cards .container .kraiviks {
+  text-align: center;
+}
+
+.item-cards .container .kraiviks ol li {
+  border-radius: 20px;
+  background-color: #8ed4bf;
+  padding: 5px;
+  margin: 5px;
+}
+
+.item-cards .container .kraiviks ol li a {
+  border: none;
+}
+
 @media (max-width: 512px) {
   header {
     min-width: 340px !important;
