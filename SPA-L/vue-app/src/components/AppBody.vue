@@ -3,7 +3,6 @@
     <section class="body-item" :class="{bgWhite: bgColor}">
       <div class="body-header">
         <FilterTasks />
-        <div class="counter">{{ arrayTask.length }} task left</div>
       </div>
       <form class="input-group mt-3 mb-3" @submit.prevent="createTask">
         <input
@@ -25,6 +24,7 @@
         </div>
       </form>
       <ToDoItem />
+      <div class="counter">{{ arrayTask.length }} task left</div>
     </section>
   </article>
 </template>
@@ -62,14 +62,16 @@ export default {
     margin: 0 100px;
     padding: 50px;
     box-shadow: 10px 10px 25px #41454d;
-    .body-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .counter {
-        text-align: center;
+    .counter {
+        margin-top: 10px;
+        text-align: right;
         color: black;
       }
+    .body-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
     }
     .form-control {
       background-color: rgba(255, 255, 255, 0.151);
