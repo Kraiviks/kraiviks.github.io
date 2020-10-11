@@ -33,7 +33,9 @@
         class="hidden-md-and-up"
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
-      <v-toolbar-title class="logo">Kraiviks: App</v-toolbar-title>
+      <v-toolbar-title>
+        <router-link to="/" tag="span" class="pointer">Kraiviks: App</router-link>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn color="#0000" v-for="link in links" :key="link.title" :to="link.url">
@@ -45,7 +47,7 @@
   </v-card>
 
   <!-- Sizes your content based upon application components -->
-  <v-main>
+  <v-main >
 
     <!-- Provides the application the proper gutter -->
     <v-container fluid >
@@ -79,16 +81,14 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  background-color:#e5e9ec;
 }
-.logo{
+
+.pointer{
   cursor: pointer;
-  user-select: none;
 }
 </style>
