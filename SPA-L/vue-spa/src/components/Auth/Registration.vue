@@ -45,7 +45,7 @@
                 color="#54575f"
                 :style="'color:white'"
                 @click="onSubmit"
-                >Create account</v-btn>
+                >Sign up</v-btn>    
               </v-card-actions>
             </v-card>
           </v-flex>
