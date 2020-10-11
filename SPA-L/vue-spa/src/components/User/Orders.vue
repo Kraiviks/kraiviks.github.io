@@ -26,7 +26,7 @@
                 </v-list-item-content>
                 <v-list-item-action>
                     <v-btn 
-                        :to="'/ad/'+ order.adId"
+                        :to="'/order/'+ order.orderId"
                         color="success"
                     >Open</v-btn>
                 </v-list-item-action>
@@ -47,7 +47,7 @@ export default {
                 id: 'da12',
                 name: 'NameOrder',
                 phone: '2312-3123-312-3',
-                adId: '123',
+                orderId: '123',
                 done: false
             }
         ]

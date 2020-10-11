@@ -5,14 +5,14 @@
         <v-flex xs12>
           <v-carousel>
             <v-carousel-item
-              v-for="ad in ads"
-              :key="ad.id"
-              :src="ad.imageSrc"
-              reverse-transition="fade-transition"
-              transition="fade-transition"
+              v-for="order in orders"
+              :key="order.id"
+              :src="order.imageSrc"
+              reverse-transition="fordere-transition"
+              transition="fordere-transition"
             >
                 <div class="slide-link">
-                    <v-btn color="success" :to="'/ad/'+ ad.id">{{ad.title}}</v-btn>
+                    <v-btn color="success" :to="'/order/'+ order.id">{{order.title}}</v-btn>
                 </div>
             </v-carousel-item>
           </v-carousel>
@@ -25,27 +25,27 @@
             xs12
             md6
             lg4
-            v-for="ad in ads"
-            :key="ad.id"
+            v-for="order in orders"
+            :key="order.id"
 
         >
           <v-card class="mx-auto" max-width="400">
             <v-img
               class="white--text align-end"
               height="200px"
-              :src="ad.imageSrc"
+              :src="order.imageSrc"
             >
-              <v-card-title>{{ad.title}}</v-card-title>
+              <v-card-title>{{order.title}}</v-card-title>
             </v-img>
 
             <v-card-text class="text--primary">
-              <div>{{ad.description}}</div>
+              <div>{{order.description}}</div>
             </v-card-text>
 
             <v-card-actions>
-              <div class="price">{{ad.price}} грн.</div>
+              <div class="price">{{order.price}} грн.</div>
               <v-spacer></v-spacer>
-              <v-btn text :to="'/ad/' + ad.id" > Open </v-btn>
+              <v-btn text :to="'/order/' + order.id" > Open </v-btn>
               <v-btn raised class="pimary"> Order </v-btn>
             </v-card-actions>
           </v-card>
@@ -59,7 +59,7 @@
 export default {
   data() {
     return {
-      ads: [
+      orders: [
         {
           title: "Хот-Дог",
           description: "Описссссссссссссссс",

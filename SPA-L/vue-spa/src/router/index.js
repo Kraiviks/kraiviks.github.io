@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/components/Home'
-import Ad from '@/components/Ads/Ad'
-import AdList from '@/components/Ads/AdList'
-import NewAd from '@/components/Ads/NewAd'
+import Order from '@/components/Orders/Order'
+import OrderList from '@/components/Orders/OrderList'
+import NewOrder from '@/components/Orders/NewOrder'
 import Login from '@/components/Auth/Login'
 import Registration from '@/components/Auth/Registration'
 import Orders from '@/components/User/Orders'
@@ -17,19 +17,19 @@ const routes = [
     component: Home
   },
   {
-    path: '/ad/:id',
-    name: 'ad',
-    component: Ad
+    path: '/order/:id',
+    name: 'order',
+    component: Order
   },
   {
     path: '/list',
     name: 'list',
-    component: AdList
+    component: OrderList
   },
   {
     path: '/new',
-    name: 'newAd',
-    component: NewAd
+    name: 'newOrder',
+    component: NewOrder
   },
   {
     path: '/login',
