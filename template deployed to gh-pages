@@ -1,0 +1,6 @@
+Stem 1
+git add dist && git commit -m "Your commit"
+Step 2
+Use subtree push to send it to the gh-pages branch on GitHub.
+
+git subtree push --prefix dist origin gh-pages
