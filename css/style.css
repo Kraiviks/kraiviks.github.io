@@ -8,52 +8,64 @@
   font-family: "Roboto", sans-serif;
 }
 
-html {
-  height: 100%;
+html,
+body {
+  height: 100vh;
+  width: 100vw;
   background-color: #9ea0a4;
 }
 
-a {
-  color: #118a57;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50px;
+body {
+  position: absolute;
 }
 
-a .wrap-img {
-  width: 150px;
-  height: 100px;
-  border-radius: 50% 50% 0 0;
-  overflow: hidden;
+.hello {
+  background-color: #ffffff;
+  width: 300px;
+  height: 232px;
+  border-radius: 13px;
+  margin: 0 auto;
+  -webkit-box-shadow: 1px 2px 3px;
+          box-shadow: 1px 2px 3px;
+  position: relative;
+  top: 30%;
+}
+
+.hello .foto {
+  background-image: url(../assets/Avatar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 140px;
+  height: 140px;
+  -webkit-box-shadow: 1px 1px 30px #4fbeac;
+          box-shadow: 1px 1px 30px #4fbeac;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: -75px;
+}
+
+.hello .name {
+  font-size: 21pt;
+  width: 140px;
   text-align: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  margin: 0 auto;
+  position: relative;
+  top: -64px;
 }
 
-a .wrap-img:hover {
-  -webkit-box-shadow: 1px 1px 10px #118a57;
-          box-shadow: 1px 1px 10px #118a57;
-}
-
-a img {
-  width: 150px;
-}
-
-.root {
-  width: 100vw;
-  height: 100vh;
+.hello footer {
+  background-color: #4fbeac;
+  width: 300px;
+  height: 78px;
+  position: relative;
+  top: -50px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -62,21 +74,24 @@ a img {
           align-items: center;
 }
 
-.root .examples {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #9d9fa3;
-  margin: 0 auto;
-  margin-top: 15px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 900px;
+.hello footer .button {
+  display: inline-block;
+  background-color: #54575f;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 11pt;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.hello footer .button:hover {
+  background-color: white;
+  color: #33c1e3;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 /*# sourceMappingURL=style.css.map */
